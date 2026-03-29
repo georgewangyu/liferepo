@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/templates/SOUL.template"
+doc_type: "templates_doc"
+doc_status: "active"
+title: "SOUL Template"
+description: "Be direct, clear, and pragmatic."
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:templates"
+  - "visibility:public"
+  - "type:templates_doc"
+---
 # SOUL Template
 
 ## Core

@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/templates/AGENT-area-template"
+doc_type: "agent_spec"
+doc_status: "active"
+title: "AGENT-<area>.md Template"
+description: "Describe what this area is responsible for."
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:templates"
+  - "visibility:public"
+  - "type:agent_spec"
+---
 # AGENT-<area>.md Template
 
 ## Purpose

@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/resume/README"
+doc_type: "readme"
+doc_status: "active"
+title: "Resume Spec"
+description: "Public specification layer for resume workflows and resume agents."
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:resume"
+  - "visibility:public"
+  - "type:readme"
+---
 # Resume Spec
 
 Public specification layer for resume workflows and resume agents.

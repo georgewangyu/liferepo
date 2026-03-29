@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/communications/EMAIL_WORKFLOW"
+doc_type: "workflow_spec"
+doc_status: "active"
+title: "Email Workflow"
+description: "Reusable workflow for email context ingestion, prioritization, and draft support."
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:communications"
+  - "visibility:public"
+  - "type:workflow_spec"
+---
 # Email Workflow
 
 Reusable workflow for email context ingestion, prioritization, and draft support.

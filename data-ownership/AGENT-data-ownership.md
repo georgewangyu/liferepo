@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/data-ownership/AGENT-data-ownership"
+doc_type: "agent_spec"
+doc_status: "active"
+title: "AGENT-data-ownership"
+description: "Define reusable workflows for owning, exporting, and structuring personal data."
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:data-ownership"
+  - "visibility:public"
+  - "type:agent_spec"
+---
 # AGENT-data-ownership
 
 ## Purpose

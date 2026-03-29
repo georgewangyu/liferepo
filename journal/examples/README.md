@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/journal/examples/README"
+doc_type: "readme"
+doc_status: "active"
+title: "Journal Examples"
+description: "Public-safe reference artifacts that show expected output shape and writing"
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:journal"
+  - "visibility:public"
+  - "type:readme"
+---
 # Journal Examples
 
 Public-safe reference artifacts that show expected output shape and writing

@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/housing/AGENT-housing"
+doc_type: "agent_spec"
+doc_status: "active"
+title: "AGENT-housing"
+description: "Define reusable workflows for organizing housing/property records and analyses."
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:housing"
+  - "visibility:public"
+  - "type:agent_spec"
+---
 # AGENT-housing
 
 ## Purpose

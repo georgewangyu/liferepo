@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/memory/AGENT-memory"
+doc_type: "memory_doc"
+doc_status: "active"
+title: "AGENT-memory"
+description: "Define how agents extract, review, and maintain structured memory records from"
+memory_eligible: true
+memory_priority: "high"
+doc_tags:
+  - "domain:memory"
+  - "visibility:public"
+  - "type:memory_doc"
+---
 # AGENT-memory
 
 ## Purpose
@@ -10,6 +24,8 @@ private narrative sources.
 - Narrative files are the human source of truth.
 - `memory/*.jsonl` is a structured overlay for retrieval.
 - Candidate extraction and reviewed promotion are separate steps.
+- Source docs keep static metadata in YAML frontmatter; runtime access metrics
+  live in separate memory index/log files.
 
 ## Canonical Stores
 
@@ -36,6 +52,9 @@ Default high-value stores:
 2. Review candidates for evidence quality and duplication.
 3. Promote accepted records into canonical stores.
 4. Run validation checks for required fields and broken references.
+5. Keep dynamic retrieval stats in:
+   - `<private-repo>/memory/doc_access_index.json`
+   - `<private-repo>/memory/doc_access_log.jsonl`
 
 ## Anti-Patterns
 

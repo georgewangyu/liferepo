@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/knowledge/LEARNING_TRACK_WORKFLOW"
+doc_type: "workflow_spec"
+doc_status: "active"
+title: "Learning Track Workflow"
+description: "Reusable workflow for managing a curated learning track (papers/videos/resources)."
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:knowledge"
+  - "visibility:public"
+  - "type:workflow_spec"
+---
 # Learning Track Workflow
 
 Reusable workflow for managing a curated learning track (papers/videos/resources).

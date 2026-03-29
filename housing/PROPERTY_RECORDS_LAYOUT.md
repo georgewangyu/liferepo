@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/housing/PROPERTY_RECORDS_LAYOUT"
+doc_type: "housing_doc"
+doc_status: "active"
+title: "Property Records Layout"
+description: "Reusable folder strategy for private housing records."
+memory_eligible: true
+memory_priority: "medium"
+doc_tags:
+  - "domain:housing"
+  - "visibility:public"
+  - "type:housing_doc"
+---
 # Property Records Layout
 
 Reusable folder strategy for private housing records.

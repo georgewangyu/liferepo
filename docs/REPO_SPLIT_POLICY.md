@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/docs/REPO_SPLIT_POLICY"
+doc_type: "docs_doc"
+doc_status: "active"
+title: "Repository Split Policy"
+description: "This workspace uses three repositories with explicit boundaries:"
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:docs"
+  - "visibility:public"
+  - "type:docs_doc"
+---
 # Repository Split Policy
 
 This workspace uses three repositories with explicit boundaries:

@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/journal/README"
+doc_type: "readme"
+doc_status: "active"
+title: "Journal Spec"
+description: "Public specification layer for journal workflows and agents."
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:journal"
+  - "visibility:public"
+  - "type:readme"
+---
 # Journal Spec
 
 Public specification layer for journal workflows and agents.

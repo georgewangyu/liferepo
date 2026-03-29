@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/docs/PRIVATE_REPO_POINTER_CONTRACT"
+doc_type: "docs_doc"
+doc_status: "active"
+title: "Private Repo Pointer Contract"
+description: "This repo is public and must not hardcode one person's private-repo name or"
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:docs"
+  - "visibility:public"
+  - "type:docs_doc"
+---
 # Private Repo Pointer Contract
 
 This repo is public and must not hardcode one person's private-repo name or

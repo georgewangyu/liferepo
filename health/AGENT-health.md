@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/health/AGENT-health"
+doc_type: "agent_spec"
+doc_status: "active"
+title: "AGENT-health"
+description: "Define reusable health-data workflow behavior and interpretation guardrails for"
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:health"
+  - "visibility:public"
+  - "type:agent_spec"
+---
 # AGENT-health
 
 ## Purpose

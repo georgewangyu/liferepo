@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/health/APPLE_HEALTH_ONBOARDING"
+doc_type: "health_doc"
+doc_status: "active"
+title: "Apple Health Onboarding"
+description: "This guide explains how a new user sets up Apple Health ingestion for the"
+memory_eligible: true
+memory_priority: "medium"
+doc_tags:
+  - "domain:health"
+  - "visibility:public"
+  - "type:health_doc"
+---
 # Apple Health Onboarding
 
 This guide explains how a new user sets up Apple Health ingestion for the

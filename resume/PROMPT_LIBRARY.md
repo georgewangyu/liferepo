@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/resume/PROMPT_LIBRARY"
+doc_type: "resume_doc"
+doc_status: "active"
+title: "Resume Prompt Library"
+description: "Reusable prompt modules for resume review, tailoring, and rewriting."
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:resume"
+  - "visibility:public"
+  - "type:resume_doc"
+---
 # Resume Prompt Library
 
 Reusable prompt modules for resume review, tailoring, and rewriting.

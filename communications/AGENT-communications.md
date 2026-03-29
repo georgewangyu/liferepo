@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/communications/AGENT-communications"
+doc_type: "agent_spec"
+doc_status: "active"
+title: "AGENT-communications"
+description: "Define reusable workflows for email triage/response support and"
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:communications"
+  - "visibility:public"
+  - "type:agent_spec"
+---
 # AGENT-communications
 
 ## Purpose

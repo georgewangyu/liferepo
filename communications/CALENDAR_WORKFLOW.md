@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/communications/CALENDAR_WORKFLOW"
+doc_type: "workflow_spec"
+doc_status: "active"
+title: "Calendar Workflow"
+description: "Reusable workflow for schedule-aware planning support."
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:communications"
+  - "visibility:public"
+  - "type:workflow_spec"
+---
 # Calendar Workflow
 
 Reusable workflow for schedule-aware planning support.

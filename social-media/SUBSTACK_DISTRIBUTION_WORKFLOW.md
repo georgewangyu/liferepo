@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/social-media/SUBSTACK_DISTRIBUTION_WORKFLOW"
+doc_type: "workflow_spec"
+doc_status: "active"
+title: "Substack Distribution Workflow"
+description: "Reusable workflow for long-form newsletter/article production and distribution."
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:social-media"
+  - "visibility:public"
+  - "type:workflow_spec"
+---
 # Substack Distribution Workflow
 
 Reusable workflow for long-form newsletter/article production and distribution.

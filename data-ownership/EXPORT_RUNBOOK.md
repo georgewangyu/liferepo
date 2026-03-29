@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/data-ownership/EXPORT_RUNBOOK"
+doc_type: "data-ownership_doc"
+doc_status: "active"
+title: "Export Runbook"
+description: "Reusable runbook for adding a new personal-data export source."
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:data-ownership"
+  - "visibility:public"
+  - "type:data-ownership_doc"
+---
 # Export Runbook
 
 Reusable runbook for adding a new personal-data export source.
