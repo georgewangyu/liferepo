@@ -22,6 +22,15 @@ Use local conversion/build tooling for repeatable output:
 
 - text extraction for review
 - source-to-PDF build for submissions
+- reference sample: `resume/examples/senior-swe/`
+
+Sample build command (from `liferepo/`):
+
+```bash
+python3 ../georgeskills/skills/utility-ops/scripts/build_resume_pdf.py \
+  resume/examples/senior-swe/Sample_Senior_SWE_Resume.tex \
+  --project-root .
+```
 
 ## Recommended Source-of-Truth Pattern
 
