@@ -81,11 +81,18 @@ From `liferepo/`:
 
 `python3 ../georgeskills/scripts/bootstrap_private_repo.py --name my-private-repo --create`
 
-Optional scaffold flags:
+Recommended for new users:
 
 `python3 ../georgeskills/scripts/bootstrap_private_repo.py --name my-private-repo --create --interactive`
 
-or explicit non-interactive setup:
+The interactive quick start now:
+
+- prompts for the private repo name if you do not pass one
+- helps you draft `<private-repo>/SOUL.md`
+- helps you draft `<private-repo>/PRIVATE_RUNTIME.md`
+- offers to scaffold `journal`, `Resume`, and export folders
+
+For explicit non-interactive setup:
 
 `python3 ../georgeskills/scripts/bootstrap_private_repo.py --name my-private-repo --create --init-journal --init-resume --init-exports`
 

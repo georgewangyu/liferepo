@@ -18,10 +18,12 @@ This creates:
 - `liferepo/.liferepo/local/private_repo.json`
 - `<private-repo>/.liferepo-private.json`
 - `<private-repo>/SOUL.md` (copied from `templates/SOUL.template.md` if missing)
+- `<private-repo>/PRIVATE_RUNTIME.md` (copied from
+  `templates/PRIVATE_RUNTIME.template.md` if missing)
 
-## Optional Scaffold Modules
+## Interactive Quick Start
 
-Use interactive prompts:
+For a guided first-run setup, use:
 
 ```bash
 python3 ../georgeskills/scripts/bootstrap_private_repo.py \
