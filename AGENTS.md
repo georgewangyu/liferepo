@@ -8,9 +8,18 @@ Substantive rules live in `AGENT.md` and local `AGENT-*.md` files.
 At the start of every new session in this repository, read in order:
 
 1. `AGENT.md`
-2. `README.md`
-3. If configured, load `<private-repo>/SOUL.md` via `.liferepo/local/private_repo.json`.
-4. If no private repo is configured yet, use `templates/SOUL.template.md`.
+2. `docs/ASSISTANT_OPERATING_MANUAL.md`
+3. `README.md`
+4. If configured, load `<private-repo>/SOUL.md` via `.liferepo/local/private_repo.json`.
+5. If configured, load `<private-repo>/PRIVATE_RUNTIME.md`.
+6. If configured and running journal workflows, load `<private-repo>/journal/PRIVATE-journal.md`.
+7. If no private repo is configured yet, use:
+   - `templates/SOUL.template.md`
+   - `templates/PRIVATE_RUNTIME.template.md`
+
+Treat `docs/ASSISTANT_OPERATING_MANUAL.md` as required runtime policy, not
+reference material. Commit-format rules in that file are mandatory for every
+commit.
 
 ## Directory-Specific Context
 

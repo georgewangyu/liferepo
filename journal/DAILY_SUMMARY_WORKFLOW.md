@@ -48,6 +48,16 @@ python3 <private-repo>/scripts/journal/morning_brief.py --date YYYY-MM-DD
 
 If brief reports `watch`/`alert`, surface that before sprint planning.
 
+## Private Overlay Hook
+
+If present, load:
+
+```text
+<private-repo>/journal/PRIVATE-journal.md
+```
+
+before applying narrator tone or private style preferences.
+
 ## Data Inputs (Before Interview)
 
 Use these when available:

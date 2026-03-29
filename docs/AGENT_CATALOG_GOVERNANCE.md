@@ -16,6 +16,7 @@ Define governance for the public agent catalog.
 
 - When migrating agent guidance from private repos, update:
   - `docs/AGENT_MIGRATION_MAP.md`
+  - `docs/ASSISTANT_OPERATING_MANUAL.md` (for cross-domain policy)
   - area `README.md`
   - area `AGENT-*.md`
 - If a legacy private doc still exists, it must point back to this canonical
