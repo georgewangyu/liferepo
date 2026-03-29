@@ -47,7 +47,7 @@ Every exploration cycle must produce at least one:
 
 ## Integration Rules
 
-- Route validated insights to `agents/knowledge` or `agents/principles`.
+- Route validated insights to `knowledge/` or `principles/`.
 - Route execution hooks into next sprint planning surfaces.
 - Include exploration outcomes in daily/weekly retrospectives.
 

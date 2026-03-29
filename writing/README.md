@@ -4,7 +4,7 @@ Reusable guidance for high-quality writing workflows across formats.
 
 - Canonical agent rules: `AGENT-writing.md`
 - Long-form execution workflow: `LONG_FORM_WORKFLOW.md`
-- Related: `../social-media/`, `../communications/`, `../../resume/`
+- Related: `../social-media/`, `../communications/`, `../resume/`
 
 ## Scope
 

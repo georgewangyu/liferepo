@@ -2,68 +2,88 @@
 
 Public repository for reusable agent documentation, conventions, and templates.
 
-This repository is intentionally separated from private personal operations.
-Private journaling and personal records live in a separate private repository
-(`private-repo`, name chosen by each user).
+Private data and personal overlays live in a separate private repo
+(`<private-repo>`, user-defined name).
+
+## Monorepo Philosophy (Multi-Repo Execution)
+
+The original monorepo philosophy still applies. We now execute it as a logical
+monorepo split across repositories by sensitivity:
+
+1. Keep architecture/workflow context close to where work happens.
+2. Keep domain names consistent across repos (`journal`, `memory`, etc.).
+3. Keep bootstrap context deterministic.
+4. Split by data sensitivity, not by ownership.
+
+Repository roles:
+- `liferepo`: public canonical docs and agent specs.
+- `georgeskills`: modular executable tooling.
+- `<private-repo>`: private state, records, and personal overlays.
 
 ## What Belongs Here
 
-- Agent bootstrap and policy patterns (`AGENTS.md`, `AGENT.md`, `AGENT-*.md`)
-- Reusable documentation frameworks
-- Prompt quality frameworks and review checklists
-- Public-safe templates and examples
+- Public-safe agent specs and workflows
+- Shared governance docs and templates
+- Prompt quality/reference material
 
 ## What Does Not Belong Here
 
-- Personal journals or reflections
-- Health, finance, housing, or private family data
-- Company-confidential material
-- API credentials, tokens, or secrets
+- Personal journals and private records
+- Company-confidential data
+- Credentials/tokens/secrets
 
-## Structure
+## Folder Structure (Flat by Domain)
 
-```
+All agent domains now live at repo root for clarity.
+
+```text
 liferepo/
-├── AGENTS.md          # Bootstrap loader
-├── AGENT.md           # Core repository rules
-├── SOUL.md            # Collaboration style baseline
-├── IMPROVEMENTS.md    # Public framework backlog
-├── agents/            # Canonical agent catalog (career, writing, social, etc.)
-├── docs/              # Policies, architecture, and split decisions
-├── journal/           # Public journal agent/workflow specifications
-├── memory/            # Public memory schema and agent specifications
-├── health/            # Public health workflow/agent specifications
-├── deep-exploration/  # Public exploration workflow/agent specifications
-├── resume/            # Public resume-agent workflow specifications
-└── templates/         # Starter templates for new agent areas
+  AGENTS.md
+  AGENT.md
+  SOUL.md
+  IMPROVEMENTS.md
+  business/
+  career/
+  communications/
+  data-ownership/
+  deep-exploration/
+  docs/
+  health/
+  housing/
+  journal/
+  knowledge/
+  memory/
+  principles/
+  resume/
+  social-media/
+  templates/
+  writing/
 ```
+
+## Domain Pattern
+
+Each domain should generally include:
+
+- `AGENT-<domain>.md`
+- `README.md`
+- `IMPROVEMENTS.md`
 
 ## Relationship to Skills
 
-Execution-heavy scripts and modular automation belong in `georgeskills`.
-This keeps `liferepo` focused on public framework documentation instead of
-environment-specific operational scripts.
-
-`agents/` contains additional reusable agent domains that were previously mixed
-into private repos (for example business, communications, social media,
-knowledge, principles, and job-hunting workflows).
+Execution-heavy scripts stay in `georgeskills`. This repo remains documentation
+first.
 
 ## Private Repo Bootstrap
 
-Each user should keep private state in a separate sibling repository (name is
-user choice, for example `my-private-repo`).
+From `liferepo/`:
 
-1. Run bootstrap (from `liferepo/`):
-   `python3 ../georgeskills/scripts/bootstrap_private_repo.py --name my-private-repo --create`
-2. Confirm `liferepo/.liferepo/local/private_repo.json` exists.
-3. Confirm `<private-repo>/.liferepo-private.json` exists.
-4. Optionally export `LIFEREPO_PRIVATE_ROOT` in shell profile.
+`python3 ../georgeskills/scripts/bootstrap_private_repo.py --name my-private-repo --create`
 
-Notes:
-- `private_repo_name` is the canonical setting for portability.
-- Bootstrap writes name-only config for standard sibling layouts.
-- `private_repo_path` can be added as an optional local override.
+Then confirm:
 
-Boundary details and ownership rules are defined in:
+1. `liferepo/.liferepo/local/private_repo.json`
+2. `<private-repo>/.liferepo-private.json`
+
+Boundary/pointer rules:
 - `docs/BOUNDARY_CONTRACT.md`
 - `docs/PRIVATE_REPO_POINTER_CONTRACT.md`

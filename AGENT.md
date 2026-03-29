@@ -14,13 +14,12 @@ This repository is the public, reusable agent framework layer.
 
 - Root `AGENTS.md` is a bootstrap entrypoint, not a policy dump.
 - Area-specific rules belong in `AGENT-*.md` files near the work.
-- Cross-domain public agent specs should live under `agents/`.
-- Every new top-level area must include:
+- All domain specs live at repository root (flat-by-domain).
+- Every domain area should include:
   - `README.md`
-  - `AGENT-<area>.md`
+  - `AGENT-<domain>.md`
   - `IMPROVEMENTS.md`
-- If top-level structure changes, update the root `README.md` structure section
-  in the same change.
+- If domain structure changes, update root `README.md` in the same change.
 
 ## Modularity Rules
 
@@ -28,8 +27,7 @@ This repository is the public, reusable agent framework layer.
   in `georgeskills` (or separate repos).
 - Keep this repo focused on guidance, conventions, templates, and examples.
 - If a script is included here, it must be public-safe and generic.
-- Use the same domain folder names across repos (`journal`, `memory`, etc.)
-  for clarity, but keep one canonical home per artifact.
+- Keep domain folder names consistent across repos for clarity.
 
 ## Private Repo Pointer Contract
 

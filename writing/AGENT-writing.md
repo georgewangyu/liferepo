@@ -42,6 +42,6 @@ Use these reusable prompt frameworks when drafting with AI:
 
 ## Repository Boundary
 
-- Public writing specs live in `liferepo/agents/writing/`.
+- Public writing specs live in `liferepo/writing/`.
 - User-specific voice profiles and private writing archives stay in
   `<private-repo>/writing/`.

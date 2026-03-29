@@ -39,6 +39,6 @@ Detailed companion: `CALENDAR_WORKFLOW.md`.
 
 ## Repository Boundary
 
-- Public reusable workflow docs: `liferepo/agents/communications/`.
+- Public reusable workflow docs: `liferepo/communications/`.
 - Private account exports/config/tone profiles: `<private-repo>/tooling/` and
   `<private-repo>/writing/`.

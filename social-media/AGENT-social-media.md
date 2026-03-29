@@ -60,5 +60,5 @@ and long-form article distribution.
 
 ## Repository Boundary
 
-- Public workflow specification lives in `liferepo/agents/social-media/`.
+- Public workflow specification lives in `liferepo/social-media/`.
 - Private creator profile details, account data, and historical performance data stay in `<private-repo>/social-media/`.

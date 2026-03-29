@@ -1,0 +1,79 @@
+\documentclass[10pt]{article}
+\usepackage[margin=0.7in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=12pt, itemsep=2pt, topsep=2pt}
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{center}
+{\LARGE Alex Chen} \\
+San Francisco, CA \textbar{} alex.chen@example.com \textbar{} (555) 123-4567 \\
+\href{https://linkedin.com/in/alexchen}{linkedin.com/in/alexchen}
+\textbar{}
+\href{https://github.com/alexchen}{github.com/alexchen}
+\end{center}
+
+\vspace{4pt}
+\textbf{Summary} \\
+Senior Software Engineer with 8+ years building distributed backend systems and
+internal developer platforms. Led multi-team initiatives that improved API
+latency, service reliability, and release velocity across high-traffic
+production environments.
+
+\vspace{6pt}
+\textbf{Experience}
+
+\vspace{4pt}
+\textbf{Nimbus Commerce} \hfill San Francisco, CA \\
+\textit{Senior Software Engineer} \hfill 2021 -- Present
+\begin{itemize}
+  \item Led migration of checkout services from monolith modules to domain
+  APIs, reducing p95 latency by 37\% and supporting 4x seasonal traffic.
+  \item Designed an idempotent order pipeline with retry-safe semantics and
+  event audit trails, lowering duplicate charge incidents by 92\%.
+  \item Built deployment health gates and rollback automation used by 14 teams,
+  reducing failed production rollouts by 46\%.
+\end{itemize}
+
+\textit{Software Engineer II} \hfill 2018 -- 2021
+\begin{itemize}
+  \item Built inventory reservation service in Go and PostgreSQL handling
+  120M+ daily requests with strict consistency checks.
+  \item Added real-time SLA dashboards and alerting playbooks, cutting
+  mean-time-to-detect by 55\% during peak events.
+\end{itemize}
+
+\vspace{4pt}
+\textbf{Orbit Analytics} \hfill Seattle, WA \\
+\textit{Software Engineer} \hfill 2016 -- 2018
+\begin{itemize}
+  \item Implemented streaming ingestion pipeline for customer telemetry,
+  reducing data freshness from 25 minutes to under 4 minutes.
+  \item Partnered with product and support to ship self-serve diagnostics
+  tooling that reduced L2 ticket volume by 30\%.
+\end{itemize}
+
+\vspace{6pt}
+\textbf{Selected Projects}
+\begin{itemize}
+  \item \textbf{Service Scorecard Platform}: Internal quality scorecards for 70+
+  services using reliability, test coverage, and change failure metrics.
+  \item \textbf{Incident Review Assistant}: Automated extraction of action items
+  from postmortems with ownership assignment and due-date tracking.
+\end{itemize}
+
+\vspace{6pt}
+\textbf{Education} \\
+M.S. Computer Science, Georgia Institute of Technology \hfill 2020 \\
+B.S. Computer Science, University of Washington \hfill 2016
+
+\vspace{6pt}
+\textbf{Skills} \\
+Go, Python, TypeScript, Java, PostgreSQL, Redis, Kafka, gRPC, Kubernetes,
+Terraform, AWS, CI/CD, Observability, Incident Response
+
+\end{document}
