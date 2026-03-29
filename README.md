@@ -40,7 +40,6 @@ All agent domains now live at repo root for clarity.
 liferepo/
   AGENTS.md
   AGENT.md
-  SOUL.md
   IMPROVEMENTS.md
   business/
   career/
@@ -59,6 +58,9 @@ liferepo/
   templates/
   writing/
 ```
+
+`SOUL.md` is intentionally private. Public template lives at:
+- `templates/SOUL.template.md`
 
 ## Domain Pattern
 
@@ -79,11 +81,21 @@ From `liferepo/`:
 
 `python3 ../georgeskills/scripts/bootstrap_private_repo.py --name my-private-repo --create`
 
+Optional scaffold flags:
+
+`python3 ../georgeskills/scripts/bootstrap_private_repo.py --name my-private-repo --create --interactive`
+
+or explicit non-interactive setup:
+
+`python3 ../georgeskills/scripts/bootstrap_private_repo.py --name my-private-repo --create --init-journal --init-resume --init-exports`
+
 Then confirm:
 
 1. `liferepo/.liferepo/local/private_repo.json`
 2. `<private-repo>/.liferepo-private.json`
+3. `<private-repo>/SOUL.md`
 
 Boundary/pointer rules:
 - `docs/BOUNDARY_CONTRACT.md`
 - `docs/PRIVATE_REPO_POINTER_CONTRACT.md`
+- `docs/PRIVATE_REPO_SETUP.md`

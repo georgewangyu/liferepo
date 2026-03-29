@@ -9,7 +9,8 @@ At the start of every new session in this repository, read in order:
 
 1. `AGENT.md`
 2. `README.md`
-3. `SOUL.md`
+3. If configured, load `<private-repo>/SOUL.md` via `.liferepo/local/private_repo.json`.
+4. If no private repo is configured yet, use `templates/SOUL.template.md`.
 
 ## Directory-Specific Context
 

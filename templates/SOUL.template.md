@@ -1,4 +1,4 @@
-# SOUL.md
+# SOUL Template
 
 ## Core
 
