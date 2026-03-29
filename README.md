@@ -25,6 +25,7 @@ Repository roles:
 - Public-safe agent specs and workflows
 - Shared governance docs and templates
 - Prompt quality/reference material
+- Cross-domain assistant operating manual (`docs/ASSISTANT_OPERATING_MANUAL.md`)
 
 ## What Does Not Belong Here
 
@@ -61,6 +62,7 @@ liferepo/
 
 `SOUL.md` is intentionally private. Public template lives at:
 - `templates/SOUL.template.md`
+- `templates/PRIVATE_RUNTIME.template.md`
 
 ## Domain Pattern
 
@@ -101,6 +103,19 @@ Then confirm:
 1. `liferepo/.liferepo/local/private_repo.json`
 2. `<private-repo>/.liferepo-private.json`
 3. `<private-repo>/SOUL.md`
+4. `<private-repo>/PRIVATE_RUNTIME.md`
+
+## Git Hook Setup
+
+Enable repository hooks before making commits:
+
+```bash
+git config core.hooksPath .githooks
+chmod +x .githooks/commit-msg .githooks/pre-commit
+```
+
+These hooks enforce commit-message structure and staged-file hygiene. Do not
+bypass hooks.
 
 Boundary/pointer rules:
 - `docs/BOUNDARY_CONTRACT.md`

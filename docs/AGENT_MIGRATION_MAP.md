@@ -7,7 +7,7 @@ This file maps legacy `<private-repo>` agent docs to canonical public specs in
 
 | Legacy path | Canonical spec |
 |---|---|
-| `<private-repo>/AGENT.md` | `liferepo/AGENT.md` + `liferepo/docs/AGENT_CATALOG_GOVERNANCE.md` |
+| `<private-repo>/AGENT.md` | `liferepo/AGENT.md` + `liferepo/docs/ASSISTANT_OPERATING_MANUAL.md` + `liferepo/docs/AGENT_CATALOG_GOVERNANCE.md` |
 | `<private-repo>/journal/AGENT-journal.md` | `liferepo/journal/AGENT-journal.md` |
 | `<private-repo>/memory/AGENT-memory.md` | `liferepo/memory/AGENT-memory.md` |
 | `<private-repo>/deep-exploration/AGENT-deep-exploration.md` | `liferepo/deep-exploration/AGENT-deep-exploration.md` |

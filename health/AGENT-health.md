@@ -41,9 +41,17 @@ For family-health workflows:
 
 Health workflows should produce:
 
-- Canonical day-level metric records in `<private-repo>`.
+- Canonical day-level metric records in the configured private health-records root.
 - Context summaries for daily workflow agents.
 - Optional dashboard artifacts and trend views.
+
+Preferred private layout for new setups:
+
+- source records: `<private-repo>/health-data/source-records/`
+- canonical records: `<private-repo>/health-data/records/`
+
+Legacy private layouts may still exist; tooling should tolerate those via
+private wrapper/path resolution rather than hard-coded public assumptions.
 
 ## Privacy and Safety
 

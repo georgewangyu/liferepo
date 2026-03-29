@@ -19,6 +19,18 @@ auditable, and safe.
     plans/
 ```
 
+For newer setups, keep canonical daily metric tables separate from the
+per-person family record tree:
+
+```text
+<private-repo>/health-data/
+  source-records/
+  records/
+```
+
+The family-health tree is still the right place for person-specific records,
+appointments, and plans.
+
 ## File Naming
 
 - Use `YYYY-MM-DD_description.ext` where possible.

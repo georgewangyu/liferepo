@@ -21,8 +21,16 @@ Recommended first path:
 
 Required outputs:
 
-- canonical daily health metrics table in `<private-repo>/health/records/`
+- canonical daily health metrics table in the configured private health-records root
 - interview context view for target date
+
+Preferred private layout for new setups:
+
+- source records: `<private-repo>/health-data/source-records/`
+- canonical records: `<private-repo>/health-data/records/`
+
+Legacy private layouts may still exist and are supported by the private wrappers
+and `georgeskills` health tooling.
 
 Typical command flow:
 

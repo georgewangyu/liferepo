@@ -14,9 +14,8 @@ Tools should resolve private repo root in this order:
 
 1. `LIFEREPO_PRIVATE_ROOT` (preferred)
 2. `PRIVATE_REPO_ROOT` (fallback)
-3. `GEORGEREPO_ROOT` (legacy compatibility)
-4. local pointer config in `liferepo/.liferepo/local/private_repo.json`
-5. marker discovery via `.liferepo-private.json`
+3. local pointer config in `liferepo/.liferepo/local/private_repo.json`
+4. marker discovery via `.liferepo-private.json`
 
 ## Local Pointer Config (Not Committed)
 
@@ -93,4 +92,26 @@ The public repo only carries a template:
 
 ```text
 liferepo/templates/SOUL.template.md
+```
+
+## Runtime Quirks Source
+
+When a private repo exists, runtime environment quirks should come from:
+
+```text
+<private-repo>/PRIVATE_RUNTIME.md
+```
+
+The public repo carries only a starter template:
+
+```text
+liferepo/templates/PRIVATE_RUNTIME.template.md
+```
+
+## Journal Style Overlay Source
+
+When private journaling style preferences are needed, load:
+
+```text
+<private-repo>/journal/PRIVATE-journal.md
 ```

@@ -14,6 +14,7 @@ This repository is the public, reusable agent framework layer.
 
 - Root `AGENTS.md` is a bootstrap entrypoint, not a policy dump.
 - Area-specific rules belong in `AGENT-*.md` files near the work.
+- Cross-domain operating policy belongs in `docs/ASSISTANT_OPERATING_MANUAL.md`.
 - All domain specs live at repository root (flat-by-domain).
 - Every domain area should include:
   - `README.md`
@@ -35,11 +36,13 @@ This repository is the public, reusable agent framework layer.
 - Use `<private-repo>` as the documentation placeholder.
 - Prefer name-based local pointer config (`private_repo_name`) over raw paths.
 - Runtime personality/voice source of truth is `<private-repo>/SOUL.md`.
+- Runtime private execution quirks should live in `<private-repo>/PRIVATE_RUNTIME.md`.
 - Keep only a public template in this repo (`templates/SOUL.template.md`).
+- Keep only a public runtime template in this repo (`templates/PRIVATE_RUNTIME.template.md`).
+- Daily workflow style preferences can be loaded from `<private-repo>/journal/PRIVATE-journal.md`.
 - Runtime tools should resolve private state via pointer config:
   - env: `LIFEREPO_PRIVATE_ROOT` (preferred)
   - env: `PRIVATE_REPO_ROOT` (fallback)
-  - env: `GEORGEREPO_ROOT` (legacy compatibility)
 - For first-run setup, bootstrap with:
   `python3 ../georgeskills/scripts/bootstrap_private_repo.py --name <your-private-repo> --create`
 - Detailed rules: `docs/PRIVATE_REPO_POINTER_CONTRACT.md`.
@@ -49,3 +52,5 @@ This repository is the public, reusable agent framework layer.
 - Prefer small, reversible changes.
 - Keep docs concise and pointer-based.
 - Explicitly document tradeoffs for non-obvious decisions.
+- Treat commit-format and hook rules in `docs/ASSISTANT_OPERATING_MANUAL.md` as
+  mandatory.

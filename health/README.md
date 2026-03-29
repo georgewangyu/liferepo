@@ -20,5 +20,9 @@ Public specification layer for health-related workflows and agents.
 - `FAMILY_HEALTH_RECORDS_WORKFLOW.md`
 
 Private health state lives in:
+- preferred source-records root: `<private-repo>/health-data/source-records/`
+- preferred canonical-records root: `<private-repo>/health-data/records/`
+
+Legacy private layouts may still include:
 - `<private-repo>/personal-health/`
 - `<private-repo>/health-family/`
