@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/resume/VARIANT_STRATEGY"
+doc_type: "resume_doc"
+doc_status: "active"
+title: "Resume Variant Strategy"
+description: "Reusable strategy for maintaining multiple role-targeted resume variants"
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:resume"
+  - "visibility:public"
+  - "type:resume_doc"
+---
 # Resume Variant Strategy
 
 Reusable strategy for maintaining multiple role-targeted resume variants

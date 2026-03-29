@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/career/AGENT-career"
+doc_type: "agent_spec"
+doc_status: "active"
+title: "AGENT-career"
+description: "Define reusable workflows for job search execution and interview prep systems."
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:career"
+  - "visibility:public"
+  - "type:agent_spec"
+---
 # AGENT-career
 
 ## Purpose

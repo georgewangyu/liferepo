@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/housing/REAL_ESTATE_ANALYSIS_WORKFLOW"
+doc_type: "workflow_spec"
+doc_status: "active"
+title: "Real Estate Analysis Workflow"
+description: "Produce data-driven keep/sell/refinance recommendations for investment"
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:housing"
+  - "visibility:public"
+  - "type:workflow_spec"
+---
 # Real Estate Analysis Workflow
 
 ## Goal

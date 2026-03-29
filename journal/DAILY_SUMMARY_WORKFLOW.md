@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/journal/DAILY_SUMMARY_WORKFLOW"
+doc_type: "workflow_spec"
+doc_status: "active"
+title: "Agent: Daily Summary Builder"
+description: "Maintain one daily summary per date:"
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:journal"
+  - "visibility:public"
+  - "type:workflow_spec"
+---
 # Agent: Daily Summary Builder
 
 ## Goal
@@ -145,9 +159,27 @@ Minimum sections:
 
 ## Status Header
 
-Use YAML frontmatter:
+Use YAML frontmatter.
+
+Daily summaries must include the standard doc header contract
+(`doc_schema`, `doc_id`, `doc_type`, `doc_status`, `title`, `description`,
+`doc_tags`, `memory_eligible`, `memory_priority`) plus `summary_status`.
+
+Example:
 
 ```yaml
+doc_schema: "doc-frontmatter-v1"
+doc_id: "<private-repo>/journal/summaries/2026/03/2026-03-28_Summary"
+doc_type: "daily_summary"
+doc_status: "active"
+title: "Daily Summary — 2026-03-28"
+description: "One-line summary of the day."
+doc_tags:
+  - "domain:journal"
+  - "visibility:private"
+  - "type:daily_summary"
+memory_eligible: true
+memory_priority: "high"
 summary_status: planned | partial | completed
 ```
 

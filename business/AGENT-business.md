@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/business/AGENT-business"
+doc_type: "agent_spec"
+doc_status: "active"
+title: "AGENT-business"
+description: "Define reusable venture-building and business-operations workflows."
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:business"
+  - "visibility:public"
+  - "type:agent_spec"
+---
 # AGENT-business
 
 ## Purpose

@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/deep-exploration/AGENT-deep-exploration"
+doc_type: "agent_spec"
+doc_status: "active"
+title: "AGENT-deep-exploration"
+description: "Define reusable exploration-day and exploration-sprint behavior so research time"
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:deep-exploration"
+  - "visibility:public"
+  - "type:agent_spec"
+---
 # AGENT-deep-exploration
 
 ## Purpose

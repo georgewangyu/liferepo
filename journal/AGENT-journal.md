@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/journal/AGENT-journal"
+doc_type: "agent_spec"
+doc_status: "active"
+title: "AGENT-journal"
+description: "Define reusable journaling behavior for agents, including interview flow,"
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:journal"
+  - "visibility:public"
+  - "type:agent_spec"
+---
 # AGENT-journal
 
 ## Purpose
@@ -33,6 +47,9 @@ Daily flow should produce:
    - tomorrow plan
    - subjective ratings (energy, mood, focus, productivity)
 4. A final daily summary artifact in `<private-repo>/journal/summaries/`.
+
+Daily summary markdown must include standard doc frontmatter plus
+`summary_status`.
 
 ## Monthly and Retro Contracts
 

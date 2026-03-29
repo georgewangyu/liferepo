@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/docs/PRIVATE_REPO_SETUP"
+doc_type: "docs_doc"
+doc_status: "active"
+title: "Private Repo Setup"
+description: "This checklist defines first-run setup for `<private-repo>` after cloning"
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:docs"
+  - "visibility:public"
+  - "type:docs_doc"
+---
 # Private Repo Setup
 
 This checklist defines first-run setup for `<private-repo>` after cloning

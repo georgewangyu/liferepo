@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/writing/LONG_FORM_WORKFLOW"
+doc_type: "workflow_spec"
+doc_status: "active"
+title: "Long-Form Writing Workflow"
+description: "Reusable workflow for long-form writing (blog/newsletter/articles)."
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:writing"
+  - "visibility:public"
+  - "type:workflow_spec"
+---
 # Long-Form Writing Workflow
 
 Reusable workflow for long-form writing (blog/newsletter/articles).

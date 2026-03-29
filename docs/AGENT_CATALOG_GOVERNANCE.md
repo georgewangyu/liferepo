@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/docs/AGENT_CATALOG_GOVERNANCE"
+doc_type: "agent_spec"
+doc_status: "active"
+title: "Agent Catalog Governance"
+description: "Define governance for the public agent catalog."
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:docs"
+  - "visibility:public"
+  - "type:agent_spec"
+---
 # Agent Catalog Governance
 
 ## Purpose

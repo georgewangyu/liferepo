@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/principles/PRINCIPLE_MAINTENANCE_WORKFLOW"
+doc_type: "workflow_spec"
+doc_status: "active"
+title: "Principle Maintenance Workflow"
+description: "Reusable workflow for adding, reviewing, and evolving principles."
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:principles"
+  - "visibility:public"
+  - "type:workflow_spec"
+---
 # Principle Maintenance Workflow
 
 Reusable workflow for adding, reviewing, and evolving principles.

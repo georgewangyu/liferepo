@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/social-media/AGENT-social-media"
+doc_type: "agent_spec"
+doc_status: "active"
+title: "AGENT-social-media"
+description: "Define reusable cross-platform workflows for video, short-form text promotion,"
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:social-media"
+  - "visibility:public"
+  - "type:agent_spec"
+---
 # AGENT-social-media
 
 ## Purpose

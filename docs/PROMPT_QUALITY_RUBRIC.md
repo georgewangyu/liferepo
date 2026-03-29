@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/docs/PROMPT_QUALITY_RUBRIC"
+doc_type: "docs_doc"
+doc_status: "active"
+title: "Prompt Quality Rubric"
+description: "Use this rubric to evaluate whether a prompt is reusable and operationally"
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:docs"
+  - "visibility:public"
+  - "type:docs_doc"
+---
 # Prompt Quality Rubric
 
 Use this rubric to evaluate whether a prompt is reusable and operationally

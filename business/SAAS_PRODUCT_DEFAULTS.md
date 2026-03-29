@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/business/SAAS_PRODUCT_DEFAULTS"
+doc_type: "business_doc"
+doc_status: "active"
+title: "SaaS Product Defaults"
+description: "Reusable default stance for early SaaS product architecture."
+memory_eligible: true
+memory_priority: "medium"
+doc_tags:
+  - "domain:business"
+  - "visibility:public"
+  - "type:business_doc"
+---
 # SaaS Product Defaults
 
 Reusable default stance for early SaaS product architecture.

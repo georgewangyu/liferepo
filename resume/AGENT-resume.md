@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/resume/AGENT-resume"
+doc_type: "agent_spec"
+doc_status: "active"
+title: "AGENT-resume"
+description: "Define reusable resume-building behavior for role targeting, JD tailoring, and"
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:resume"
+  - "visibility:public"
+  - "type:agent_spec"
+---
 # AGENT-resume
 
 ## Purpose

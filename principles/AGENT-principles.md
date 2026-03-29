@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/principles/AGENT-principles"
+doc_type: "agent_spec"
+doc_status: "active"
+title: "AGENT-principles"
+description: "Define reusable rules for maintaining decision principles over time."
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:principles"
+  - "visibility:public"
+  - "type:agent_spec"
+---
 # AGENT-principles
 
 ## Purpose

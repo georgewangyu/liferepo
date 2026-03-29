@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/docs/BOUNDARY_CONTRACT"
+doc_type: "docs_doc"
+doc_status: "active"
+title: "Boundary Contract"
+description: "This workspace uses a strict three-repo model:"
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:docs"
+  - "visibility:public"
+  - "type:docs_doc"
+---
 # Boundary Contract
 
 This workspace uses a strict three-repo model:

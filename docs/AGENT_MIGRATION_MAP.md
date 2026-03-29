@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/docs/AGENT_MIGRATION_MAP"
+doc_type: "agent_spec"
+doc_status: "active"
+title: "Agent Migration Map"
+description: "This file maps legacy `<private-repo>` agent docs to canonical public specs in"
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:docs"
+  - "visibility:public"
+  - "type:agent_spec"
+---
 # Agent Migration Map
 
 This file maps legacy `<private-repo>` agent docs to canonical public specs in

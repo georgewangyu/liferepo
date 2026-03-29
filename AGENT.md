@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/AGENT"
+doc_type: "agent_spec"
+doc_status: "active"
+title: "Rules for AI Assistants"
+description: "This repository is the public, reusable agent framework layer."
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:AGENT.md"
+  - "visibility:public"
+  - "type:agent_spec"
+---
 # Rules for AI Assistants
 
 This repository is the public, reusable agent framework layer.
@@ -54,3 +68,19 @@ This repository is the public, reusable agent framework layer.
 - Explicitly document tradeoffs for non-obvious decisions.
 - Treat commit-format and hook rules in `docs/ASSISTANT_OPERATING_MANUAL.md` as
   mandatory.
+
+## Document Header Contract
+
+- Every markdown document must start with YAML frontmatter.
+- New docs must include at minimum:
+  - `doc_schema`
+  - `doc_id`
+  - `doc_type`
+  - `doc_status`
+  - `title`
+  - `description`
+  - `doc_tags`
+  - `memory_eligible`
+  - `memory_priority`
+- Runtime usage statistics such as access count and last accessed timestamp must
+  not be stored in doc headers; keep those in the memory access index/log.

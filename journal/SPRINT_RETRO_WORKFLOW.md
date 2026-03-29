@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/journal/SPRINT_RETRO_WORKFLOW"
+doc_type: "workflow_spec"
+doc_status: "active"
+title: "Agent: Sprint Retrospective Builder"
+description: "Generate a sprint retrospective for a fixed sprint window (commonly 2 weeks),"
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:journal"
+  - "visibility:public"
+  - "type:workflow_spec"
+---
 # Agent: Sprint Retrospective Builder
 
 ## Goal

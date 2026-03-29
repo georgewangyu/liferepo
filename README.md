@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/README"
+doc_type: "readme"
+doc_status: "active"
+title: "liferepo"
+description: "Public repository for reusable agent documentation, conventions, and templates."
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:README.md"
+  - "visibility:public"
+  - "type:readme"
+---
 # liferepo
 
 Public repository for reusable agent documentation, conventions, and templates.

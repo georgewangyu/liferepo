@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/resume/DOCUMENT_CONVERSION_WORKFLOW"
+doc_type: "workflow_spec"
+doc_status: "active"
+title: "Resume Document Conversion Workflow"
+description: "Reusable workflow for converting resume source files into text-editable and"
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:resume"
+  - "visibility:public"
+  - "type:workflow_spec"
+---
 # Resume Document Conversion Workflow
 
 Reusable workflow for converting resume source files into text-editable and

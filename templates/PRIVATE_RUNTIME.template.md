@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/templates/PRIVATE_RUNTIME.template"
+doc_type: "templates_doc"
+doc_status: "active"
+title: "Private Runtime Template"
+description: "Use this file for private runtime quirks and local execution overrides that"
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:templates"
+  - "visibility:public"
+  - "type:templates_doc"
+---
 # Private Runtime Template
 
 Use this file for private runtime quirks and local execution overrides that

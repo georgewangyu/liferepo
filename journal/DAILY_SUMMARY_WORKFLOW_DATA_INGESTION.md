@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/journal/DAILY_SUMMARY_WORKFLOW_DATA_INGESTION"
+doc_type: "workflow_spec"
+doc_status: "active"
+title: "Daily Summary Data Ingestion"
+description: "Companion to `DAILY_SUMMARY_WORKFLOW.md`."
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:journal"
+  - "visibility:public"
+  - "type:workflow_spec"
+---
 # Daily Summary Data Ingestion
 
 Companion to `DAILY_SUMMARY_WORKFLOW.md`.

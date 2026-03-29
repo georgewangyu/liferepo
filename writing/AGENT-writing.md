@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/writing/AGENT-writing"
+doc_type: "agent_spec"
+doc_status: "active"
+title: "AGENT-writing"
+description: "Define reusable writing-system behavior for short-form, long-form, and"
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:writing"
+  - "visibility:public"
+  - "type:agent_spec"
+---
 # AGENT-writing
 
 ## Purpose

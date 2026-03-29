@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/AGENTS"
+doc_type: "agent_spec"
+doc_status: "active"
+title: "Codex Session Bootstrap"
+description: "This file is a pointer-style bootstrap. Keep it short."
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:AGENTS.md"
+  - "visibility:public"
+  - "type:agent_spec"
+---
 # Codex Session Bootstrap
 
 This file is a pointer-style bootstrap. Keep it short.

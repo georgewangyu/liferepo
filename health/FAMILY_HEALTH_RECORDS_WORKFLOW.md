@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/health/FAMILY_HEALTH_RECORDS_WORKFLOW"
+doc_type: "workflow_spec"
+doc_status: "active"
+title: "Family Health Records Workflow"
+description: "Maintain private family-health records in a structure that is searchable,"
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:health"
+  - "visibility:public"
+  - "type:workflow_spec"
+---
 # Family Health Records Workflow
 
 ## Goal

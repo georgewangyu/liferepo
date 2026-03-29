@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/social-media/PLATFORM_PROMOTION_WORKFLOW"
+doc_type: "workflow_spec"
+doc_status: "active"
+title: "Platform Promotion Workflow"
+description: "Reusable workflow for promoting long-form content across X, LinkedIn, and"
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:social-media"
+  - "visibility:public"
+  - "type:workflow_spec"
+---
 # Platform Promotion Workflow
 
 Reusable workflow for promoting long-form content across X, LinkedIn, and

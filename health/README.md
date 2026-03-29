@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/health/README"
+doc_type: "readme"
+doc_status: "active"
+title: "Health Spec"
+description: "Public specification layer for health-related workflows and agents."
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:health"
+  - "visibility:public"
+  - "type:readme"
+---
 # Health Spec
 
 Public specification layer for health-related workflows and agents.

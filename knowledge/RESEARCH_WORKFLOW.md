@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/knowledge/RESEARCH_WORKFLOW"
+doc_type: "workflow_spec"
+doc_status: "active"
+title: "Research Workflow"
+description: "Reusable workflow for topic-based research and refinement."
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:knowledge"
+  - "visibility:public"
+  - "type:workflow_spec"
+---
 # Research Workflow
 
 Reusable workflow for topic-based research and refinement.

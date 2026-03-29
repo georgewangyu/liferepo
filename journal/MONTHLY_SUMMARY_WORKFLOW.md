@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/journal/MONTHLY_SUMMARY_WORKFLOW"
+doc_type: "workflow_spec"
+doc_status: "active"
+title: "Agent: Monthly Summary Builder"
+description: "Create a monthly retrospective that aggregates daily summaries and metrics:"
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:journal"
+  - "visibility:public"
+  - "type:workflow_spec"
+---
 # Agent: Monthly Summary Builder
 
 ## Goal

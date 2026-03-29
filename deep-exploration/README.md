@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/deep-exploration/README"
+doc_type: "readme"
+doc_status: "active"
+title: "Deep Exploration Spec"
+description: "Public specification layer for structured exploration workflows."
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:deep-exploration"
+  - "visibility:public"
+  - "type:readme"
+---
 # Deep Exploration Spec
 
 Public specification layer for structured exploration workflows.

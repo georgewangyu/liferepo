@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/resume/examples/senior-swe/README"
+doc_type: "readme"
+doc_status: "active"
+title: "Sample Resume (LaTeX -> PDF)"
+description: "This folder contains a public fake resume example that demonstrates the"
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:resume"
+  - "visibility:public"
+  - "type:readme"
+---
 # Sample Resume (LaTeX -> PDF)
 
 This folder contains a public fake resume example that demonstrates the

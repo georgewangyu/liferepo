@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/communications/README"
+doc_type: "readme"
+doc_status: "active"
+title: "Communications Agent Spec"
+description: "Reusable guidance for email and calendar context workflows."
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:communications"
+  - "visibility:public"
+  - "type:readme"
+---
 # Communications Agent Spec
 
 Reusable guidance for email and calendar context workflows.

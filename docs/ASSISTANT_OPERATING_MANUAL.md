@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/docs/ASSISTANT_OPERATING_MANUAL"
+doc_type: "docs_doc"
+doc_status: "active"
+title: "Assistant Operating Manual"
+description: "This file is the canonical public operating manual migrated from legacy"
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:docs"
+  - "visibility:public"
+  - "type:docs_doc"
+---
 # Assistant Operating Manual
 
 This file is the canonical public operating manual migrated from legacy
@@ -74,6 +88,26 @@ This helps maintain institutional memory and makes it easier to understand the e
 **Directory Organization Rule**: If a root directory (like `scripts/`, `docs/`, etc.) has more than 10 files, ask the user if they want to organize by function before adding more files. Group related files together (e.g., `scripts/exports/`, `scripts/journal/`, `scripts/automation/`).
 
 **Note**: Do not create additional markdown files unless explicitly instructed. Follow the established structure documented in `README.md`.
+
+### Markdown Frontmatter (Required)
+
+All markdown docs in `liferepo` and the private overlay repo must include YAML
+frontmatter at the top of the file.
+
+Minimum required keys:
+- `doc_schema`
+- `doc_id`
+- `doc_type`
+- `doc_status`
+- `title`
+- `description`
+- `doc_tags`
+- `memory_eligible`
+- `memory_priority`
+
+Do not place runtime retrieval stats in headers. Keep dynamic usage metadata
+(`access_count`, `last_accessed`, etc.) in the dedicated memory access
+index/log.
 
 ### Prompt Quality Assessment
 

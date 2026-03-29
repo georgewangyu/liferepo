@@ -1,3 +1,17 @@
+---
+doc_schema: "doc-frontmatter-v1"
+doc_id: "liferepo/knowledge/AGENT-knowledge"
+doc_type: "agent_spec"
+doc_status: "active"
+title: "AGENT-knowledge"
+description: "Define reusable workflows for capturing, refining, and organizing knowledge."
+memory_eligible: false
+memory_priority: "low"
+doc_tags:
+  - "domain:knowledge"
+  - "visibility:public"
+  - "type:agent_spec"
+---
 # AGENT-knowledge
 
 ## Purpose
