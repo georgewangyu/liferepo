@@ -116,6 +116,12 @@ Write/update:
 <private-repo>/journal/summaries/YYYY/MM/YYYY-MM-DD_Summary.md
 ```
 
+Public reference example:
+
+```text
+journal/examples/summaries/2026/03/2026-03-24_Summary.md
+```
+
 Minimum sections:
 
 - Today at a Glance

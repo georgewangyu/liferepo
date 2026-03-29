@@ -1,79 +1,117 @@
 \documentclass[10pt]{article}
-\usepackage[margin=0.7in]{geometry}
+
+% ---------- Packages ----------
+\usepackage[margin=0.5in,top=0.4in,bottom=0.4in]{geometry}
 \usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage{xcolor}
 \usepackage[hidelinks]{hyperref}
 \usepackage{enumitem}
-\setlist[itemize]{leftmargin=12pt, itemsep=2pt, topsep=2pt}
+\usepackage{titlesec}
+\usepackage{tabularx}
+
+% ---------- Colors ----------
+\definecolor{accent}{HTML}{B31B1B}
+
+% ---------- Hyperlinks ----------
+\hypersetup{
+  colorlinks=true,
+  urlcolor=accent
+}
+
+% ---------- Spacing / Lists ----------
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\setlist[itemize]{
+  leftmargin=1.2em,
+  itemsep=-1pt,
+  topsep=0pt,
+  parsep=0pt
+}
+
+% ---------- Section Formatting ----------
+\titleformat{\section}
+  {\Large\bfseries\color{accent}}
+  {}{0pt}{}
+  [\titlerule\vspace{0.5pt}]
+
+\titlespacing*{\section}{0pt}{2pt}{1pt}
+
+% ---------- Custom Commands ----------
+\newcommand{\resumeTitle}[1]{\centerline{\Large \bfseries #1}\vspace{0pt}}
+\newcommand{\resumeContact}[1]{\centerline{\small #1}\vspace{2pt}}
+
+\newcommand{\role}[3]{%
+  \textbf{#1}\hfill \textbf{#2}\\
+  \textit{#3}\vspace{0pt}
+}
+
+\newcommand{\project}[2]{%
+  \textbf{#1}\hfill \textbf{#2}\vspace{0pt}
+}
+
+\newcommand{\skills}[1]{\textbf{Core Skills:} #1}
+
+% ---------- Document ----------
+\begin{document}
 \pagestyle{empty}
 
-\begin{document}
+\resumeTitle{Jordan Patel}
+\resumeContact{
+(555) 417-2038 \;|\;
+\href{mailto:jordan.patel@example.com}{jordan.patel@example.com} \;|\;
+\href{https://github.com/jordanpatel}{github.com/jordanpatel}
+}
 
-\begin{center}
-{\LARGE Alex Chen} \\
-San Francisco, CA \textbar{} alex.chen@example.com \textbar{} (555) 123-4567 \\
-\href{https://linkedin.com/in/alexchen}{linkedin.com/in/alexchen}
-\textbar{}
-\href{https://github.com/alexchen}{github.com/alexchen}
-\end{center}
+\section*{Summary}
+Senior Software Engineer with 8+ years building high-scale distributed systems and internal developer platforms. Led architecture decisions across reliability, data consistency, and platform automation, delivering \textbf{40\% faster} incident detection and \textbf{99.95\%+} service availability in multi-team environments.
 
-\vspace{4pt}
-\textbf{Summary} \\
-Senior Software Engineer with 8+ years building distributed backend systems and
-internal developer platforms. Led multi-team initiatives that improved API
-latency, service reliability, and release velocity across high-traffic
-production environments.
+\vspace{1pt}
+\skills{Java, Kotlin, Python, TypeScript, AWS (S3, Lambda, EC2), React, Node.js, PostgreSQL, Redis, GraphQL, Docker, Kubernetes}
 
-\vspace{6pt}
-\textbf{Experience}
+\section*{Work Experience}
 
-\vspace{4pt}
-\textbf{Nimbus Commerce} \hfill San Francisco, CA \\
-\textit{Senior Software Engineer} \hfill 2021 -- Present
+\role{Senior Software Engineer, Atlas Cloud Platform}{Jan 2022 -- Present}{Distributed Systems / Platform Reliability}
 \begin{itemize}
-  \item Led migration of checkout services from monolith modules to domain
-  APIs, reducing p95 latency by 37\% and supporting 4x seasonal traffic.
-  \item Designed an idempotent order pipeline with retry-safe semantics and
-  event audit trails, lowering duplicate charge incidents by 92\%.
-  \item Built deployment health gates and rollback automation used by 14 teams,
-  reducing failed production rollouts by 46\%.
+  \item Architected hot-key detection and traffic isolation workflows for multi-tenant storage systems, reducing severe latency incidents by \textbf{40\%}.
+  \item Designed cross-team API contracts for partition orchestration, enabling safe split/merge operations across \textbf{billions} of records.
+  \item Led reliability review process for internal services, improving change-failure response time by \textbf{35\%}.
+  \item Built onboarding and runbook standards for platform operations, reducing ramp-up time for new engineers by \textbf{30\%}.
 \end{itemize}
 
-\textit{Software Engineer II} \hfill 2018 -- 2021
+\role{Software Engineer, Northstar Logistics}{Jun 2019 -- Dec 2021}{Full-Stack Product Engineering}
 \begin{itemize}
-  \item Built inventory reservation service in Go and PostgreSQL handling
-  120M+ daily requests with strict consistency checks.
-  \item Added real-time SLA dashboards and alerting playbooks, cutting
-  mean-time-to-detect by 55\% during peak events.
+  \item Rebuilt route-planning dashboard using \textbf{TypeScript, React, and Node.js}, supporting \textbf{3,000+} daily dispatch workflows.
+  \item Increased backend test coverage from 58\% to 84\%, reducing escaped production defects by \textbf{38\%}.
 \end{itemize}
 
-\vspace{4pt}
-\textbf{Orbit Analytics} \hfill Seattle, WA \\
-\textit{Software Engineer} \hfill 2016 -- 2018
+\role{Software Engineer, Harbor Health Analytics}{Aug 2017 -- May 2019}{Data Platform Engineering}
 \begin{itemize}
-  \item Implemented streaming ingestion pipeline for customer telemetry,
-  reducing data freshness from 25 minutes to under 4 minutes.
-  \item Partnered with product and support to ship self-serve diagnostics
-  tooling that reduced L2 ticket volume by 30\%.
+  \item Built Python ETL pipelines for healthcare analytics workloads, reducing reporting latency by \textbf{45\%}.
+  \item Implemented access controls and audit logging for protected data systems used by \textbf{400+} clinical staff.
 \end{itemize}
 
-\vspace{6pt}
-\textbf{Selected Projects}
+\section*{Technical Projects}
+
+\project{SignalBoard --- Engineering Health Insights (Python, SQL, Plotly)}{2024 -- Present}
 \begin{itemize}
-  \item \textbf{Service Scorecard Platform}: Internal quality scorecards for 70+
-  services using reliability, test coverage, and change failure metrics.
-  \item \textbf{Incident Review Assistant}: Automated extraction of action items
-  from postmortems with ownership assignment and due-date tracking.
+  \item Built a lightweight engineering metrics dashboard for sprint trends, review throughput, and incident follow-up.
+  \item Automated daily ingest and weekly summaries, cutting manual reporting effort by \textbf{6+ hours/week}.
 \end{itemize}
 
-\vspace{6pt}
-\textbf{Education} \\
-M.S. Computer Science, Georgia Institute of Technology \hfill 2020 \\
-B.S. Computer Science, University of Washington \hfill 2016
+\project{Interview Prep OS (Markdown, Python, Automation Scripts)}{2023 -- Present}
+\begin{itemize}
+  \item Designed a role-targeted interview prep workflow with structured tracking for system design and behavioral prep loops.
+  \item Added prompt-driven review templates for weekly retrospectives and improvement plans.
+\end{itemize}
 
-\vspace{6pt}
-\textbf{Skills} \\
-Go, Python, TypeScript, Java, PostgreSQL, Redis, Kafka, gRPC, Kubernetes,
-Terraform, AWS, CI/CD, Observability, Incident Response
+\section*{Education}
+
+\textbf{M.S. Computer Science, Georgia Institute of Technology} \hfill \textbf{2021 -- 2023}\\
+\textit{Specialization: Computing Systems}
+
+\textbf{B.S. Computer Science, University of British Columbia} \hfill \textbf{2013 -- 2017}\\
+\textit{Dean's List}
 
 \end{document}

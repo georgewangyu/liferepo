@@ -12,6 +12,10 @@ using daily summaries + metrics + sprint plan.
 - daily metrics and optional sprint metrics CSV
 - optional reflections from sprint window
 
+Public reference example:
+
+- `journal/examples/sprints/2026-Q2_Sprint-01_2026-04-06_to_2026-04-19.md`
+
 ## Data Collection
 
 1. Read sprint goals/planned backlog.

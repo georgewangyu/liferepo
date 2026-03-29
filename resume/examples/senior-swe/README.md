@@ -3,6 +3,10 @@
 This folder contains a public fake resume example that demonstrates the
 expected source and build flow.
 
+The sample uses the same visual formatting system as the private canonical
+resume template (layout, typography, section styling, spacing, and macros),
+with fully generic placeholder content.
+
 ## Files
 
 - `Sample_Senior_SWE_Resume.tex` - LaTeX source
