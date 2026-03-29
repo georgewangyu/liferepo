@@ -34,6 +34,8 @@ This repository is the public, reusable agent framework layer.
 - Do not hardcode personal repo names in public docs.
 - Use `<private-repo>` as the documentation placeholder.
 - Prefer name-based local pointer config (`private_repo_name`) over raw paths.
+- Runtime personality/voice source of truth is `<private-repo>/SOUL.md`.
+- Keep only a public template in this repo (`templates/SOUL.template.md`).
 - Runtime tools should resolve private state via pointer config:
   - env: `LIFEREPO_PRIVATE_ROOT` (preferred)
   - env: `PRIVATE_REPO_ROOT` (fallback)

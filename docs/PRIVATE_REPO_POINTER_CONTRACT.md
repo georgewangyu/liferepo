@@ -52,6 +52,15 @@ Bootstrap command (from `liferepo/`):
 python3 ../georgeskills/scripts/bootstrap_private_repo.py --name my-private-repo --create
 ```
 
+Optional first-run scaffold:
+
+```bash
+python3 ../georgeskills/scripts/bootstrap_private_repo.py \
+  --name my-private-repo \
+  --create \
+  --interactive
+```
+
 ## Private Repo Marker
 
 Private repo root should include:
@@ -71,3 +80,17 @@ Example:
 
 This marker lets tools discover the right private state repo without relying on
 a fixed folder name.
+
+## Personality Source of Truth
+
+When a private repo exists, runtime personality should come from:
+
+```text
+<private-repo>/SOUL.md
+```
+
+The public repo only carries a template:
+
+```text
+liferepo/templates/SOUL.template.md
+```
