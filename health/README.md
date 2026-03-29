@@ -18,6 +18,7 @@ Public specification layer for health-related workflows and agents.
 ## Companion Spec
 
 - `FAMILY_HEALTH_RECORDS_WORKFLOW.md`
+- `APPLE_HEALTH_ONBOARDING.md`
 
 Private health state lives in:
 - preferred source-records root: `<private-repo>/health-data/source-records/`
