@@ -25,6 +25,15 @@ Maintain one daily summary per date:
 Use an incremental-throughout-day model, then finalize with an end-of-day
 interview.
 
+Deep sprint planning convention:
+- The summary for a given date records what actually happened on that date.
+- If the end-of-day retrospective produces concrete next-day priorities or
+  sprint suggestions, write those into tomorrow's summary file, not only into
+  today's `Tomorrow Priorities` section.
+- A tomorrow file in `planned` state is a planning artifact first. It should
+  contain concrete next-day priorities and a `Deep Sprint Plan` / equivalent
+  sprint-planning section even before the day has happened.
+
 Companion ingestion spec:
 - `DAILY_SUMMARY_WORKFLOW_DATA_INGESTION.md`
 
@@ -39,6 +48,7 @@ During normal chat/work, append relevant facts as rough bullets:
 - decisions
 - people interactions
 - health/energy context
+- notable purchases, receipts, or spending events when they help explain the day
 - priorities and unfinished work
 
 Do not block on polish during this phase.
@@ -82,6 +92,11 @@ Use these when available:
 - health context
 - optional location context
 - same-day git history context
+
+When email context includes receipts, orders, or transaction confirmations,
+carry forward the important ones into the summary body when they are relevant
+to behavior, diet, travel, logistics, or money. Do not leave them only in prep
+output if they materially explain what happened that day.
 
 Recommended helper commands:
 
@@ -151,11 +166,21 @@ Minimum sections:
 - Today at a Glance
 - Daily Metrics
 - Sprints Today
+- Deep Sprint Plan
 - Highlights
 - Challenges
 - Key Decisions
 - People / Relationships
 - Tomorrow Priorities
+
+Common optional sections when they add signal:
+
+- Reflections
+- Notes Highlights
+- Important Emails
+- Purchases / Spending
+- Conversation Milestones
+- Narrator Notes
 
 ## Status Header
 
@@ -189,9 +214,37 @@ Definitions:
 - `partial`: meaningful content captured, still materially incomplete
 - `completed`: workflow completed with best available data
 
+For a next-day file in `planned` state:
+- prefer concrete proposed sprints over generic placeholders
+- make it obvious the file is a plan for that date, not a claim that the date
+  has already happened
+- update or replace the plan once the real day starts and incremental capture
+  begins
+
 ## Quality Rules
 
 - Keep summaries specific and retrieval-friendly.
 - Separate objective telemetry from subjective ratings.
 - Avoid duplicating raw export dumps in the summary body.
+- Preserve high-signal derived facts from ingestion, including notable receipts
+  or purchases, so future review does not depend on rerunning exporters.
 - Keep personal style preferences in private overlays, not public spec.
+- `Conversation Milestones` should stay factual but can retain George's voice
+  and judgment.
+- `Narrator Notes` are optional but recommended when they help distill the
+  day's pattern in a sharper, more voiceful way. They should feel like vivid
+  pattern-calling, not generic encouragement.
+
+## End-Of-Day Planning Handoff
+
+At the end of the daily workflow, if tomorrow priorities are clear:
+
+1. Keep the final day's `Tomorrow Priorities` section concise.
+2. Also create or update tomorrow's summary file with:
+   - `summary_status: planned`
+   - a short `Today at a Glance` planning note
+   - a concrete `Deep Sprint Plan`
+   - any important operating constraints, such as calendar load, recovery
+     needs, or energy risks
+3. Never leave the next-day planning file as a blank stub if the retrospective
+   already surfaced a concrete plan.

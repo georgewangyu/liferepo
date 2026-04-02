@@ -43,3 +43,4 @@ Define reusable workflows for capturing, refining, and organizing knowledge.
 
 - `RESEARCH_WORKFLOW.md`
 - `LEARNING_TRACK_WORKFLOW.md`
+- `PERSONAL_PROFILE_CAPTURE_WORKFLOW.md`
