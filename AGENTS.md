@@ -34,6 +34,9 @@ At the start of every new session in this repository, read in order:
 Treat `docs/ASSISTANT_OPERATING_MANUAL.md` as required runtime policy, not
 reference material. Commit-format rules in that file are mandatory for every
 commit.
+Apply its low-risk auto-commit policy during the session, especially for docs,
+notes, summaries, and similar reversible repo-memory changes. Do not wait for
+an extra user nudge to commit that category of work locally.
 
 ## Directory-Specific Context
 
