@@ -47,6 +47,8 @@ Daily flow should produce:
    - tomorrow plan
    - subjective ratings (energy, mood, focus, productivity)
 4. A final daily summary artifact in `<private-repo>/journal/summaries/`.
+5. A seeded next-day planning artifact in tomorrow's summary file when the
+   end-of-day flow includes concrete priorities or sprint suggestions.
 
 Daily summary markdown must include standard doc frontmatter plus
 `summary_status`.
