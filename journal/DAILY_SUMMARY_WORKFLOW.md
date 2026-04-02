@@ -182,6 +182,84 @@ Common optional sections when they add signal:
 - Conversation Milestones
 - Narrator Notes
 
+## Stable Section Schema
+
+Use these exact section titles when possible. The structured-memory extractor
+relies on them, so naming drift should be treated as a schema change, not just
+stylistic variation.
+
+Recommended stable headers:
+
+- `Today at a Glance`
+- `Daily Metrics`
+- `Health Context`
+- `Location Context`
+- `Sprints Today`
+- `Deep Sprint Plan`
+- `Light Block Plan`
+- `Highlights`
+- `Challenges`
+- `Key Decisions`
+- `People / Relationships`
+- `Tomorrow Priorities`
+- `Purchases / Spending`
+- `Notes Highlights`
+- `Important Emails`
+- `Conversation Milestones`
+- `Narrator Notes`
+- `Reflections`
+
+Preferred normalization rules:
+
+- Prefer `Tomorrow Priorities`, not `Tomorrow`.
+- Prefer `People / Relationships`, not separate ad hoc people headers.
+- Prefer `Conversation Milestones` as one section. Subsections inside it are
+  fine, but do not rename the parent section casually.
+- Prefer `Narrator Notes` for pattern-level interpretation rather than
+  scattering that tone into unrelated sections.
+
+## Section Semantics
+
+Use each section for a distinct kind of memory signal:
+
+- `Highlights`: concrete wins, shipped outputs, or objectively good outcomes.
+- `Challenges`: obstacles, repeated failure modes, or constraints that mattered
+  to the day.
+- `Key Decisions`: decisions or operating rules likely to matter again.
+- `People / Relationships`: notable interactions, social context, and durable
+  relationship signals. Use `No notable people interactions...` when there was
+  nothing worth capturing.
+- `Tomorrow Priorities`: real next-step commitments, not vague aspirations.
+- `Conversation Milestones`: meaningful chat-derived progress, tool changes,
+  repo changes, workflow upgrades, and other important developments that should
+  not live only in chat history.
+- `Narrator Notes`: compact pattern recognition or causal interpretation that
+  helps future retrieval.
+- `Purchases / Spending`: only when transactions materially explain behavior,
+  diet, logistics, travel, or money.
+
+## Memory Extraction Mapping
+
+Current structured-memory extraction assumes:
+
+- `Key Decisions` -> `decision`
+- `Tomorrow Priorities` -> `commitment`
+- `People / Relationships` -> `person`
+- `Conversation Milestones` -> `status_change`
+- `Challenges` -> `pattern`
+- `Narrator Notes` -> `pattern`
+
+If you introduce a new section that should feed memory extraction, update the
+extractor and this workflow spec together.
+
+Validation helper:
+
+```bash
+python3 <private-repo>/scripts/journal/check_daily_workflow_completeness.py --date YYYY-MM-DD
+```
+
+This check now also flags missing stable headers for active summaries.
+
 ## Status Header
 
 Use YAML frontmatter.
