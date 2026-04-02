@@ -22,15 +22,17 @@ auditable, and safe.
 ## Recommended Structure
 
 ```text
-<private-repo>/health-family/
+<private-repo>/people/
   <person-a>/
-    records/
-    appointments/
-    plans/
+    health/
+      records/
+      appointments/
+      plans/
   <person-b>/
-    records/
-    appointments/
-    plans/
+    health/
+      records/
+      appointments/
+      plans/
 ```
 
 For newer setups, keep canonical daily metric tables separate from the
@@ -42,7 +44,7 @@ per-person family record tree:
   records/
 ```
 
-The family-health tree is still the right place for person-specific records,
+The per-person `health/` tree is the right place for person-specific records,
 appointments, and plans.
 
 ## File Naming
@@ -53,7 +55,8 @@ appointments, and plans.
 ## Operating Steps
 
 1. Identify the correct person folder.
-2. Place artifact in correct type folder (`records`, `appointments`, `plans`).
+2. Place artifact in the correct type folder inside `health/`
+   (`records`, `appointments`, `plans`).
 3. For appointment notes, capture:
    - reason
    - key findings

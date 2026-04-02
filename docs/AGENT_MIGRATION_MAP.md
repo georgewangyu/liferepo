@@ -82,6 +82,6 @@ These are private overlays only and should not be copied verbatim to public
 specs:
 
 - `<private-repo>/notes-private/**/AGENT-*.md`
-- `<private-repo>/personal-health/**/AGENT-*.md`
+- `<private-repo>/people/**/health/**/AGENT-*.md`
 - `<private-repo>/openclaw/workspace/**/AGENT*.md`
 - `<private-repo>/projects/**/AGENT-*.md`

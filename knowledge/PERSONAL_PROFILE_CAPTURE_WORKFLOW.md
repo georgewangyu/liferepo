@@ -42,10 +42,10 @@ Examples:
 
 Route captured information into the private repo, not `liferepo`.
 
-- Use `<private-repo>/knowledge/personal/profile.md` for concise durable traits,
-  constraints, tendencies, and recurring facts.
-- Use `<private-repo>/knowledge/personal/who-i-am/` for more human,
-  identity-level notes that describe the person as a whole.
+- Use `<private-repo>/people/<primary-person>/profile/profile.md` for concise
+  durable traits, constraints, tendencies, and recurring facts.
+- Use `<private-repo>/people/<primary-person>/profile/who-i-am/` for more
+  human, identity-level notes that describe the person as a whole.
 - Keep detailed medical or operational logs in the appropriate private health,
   finance, journal, or domain folders, then add short profile-level references
   only when the pattern is durable enough to matter broadly.
@@ -56,7 +56,7 @@ Start small, then split when a real cluster emerges.
 
 1. Add the durable fact to the main profile layer.
 2. If the same theme keeps recurring, create or extend a dedicated note for
-   that category in `<private-repo>/knowledge/personal/who-i-am/`.
+   that category in `<private-repo>/people/<primary-person>/profile/who-i-am/`.
 3. Update the local README when the folder structure changes.
 
 Examples of category splits:

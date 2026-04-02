@@ -39,5 +39,5 @@ Private health state lives in:
 - preferred canonical-records root: `<private-repo>/health-data/records/`
 
 Legacy private layouts may still include:
-- `<private-repo>/personal-health/`
-- `<private-repo>/health-family/`
+- `<private-repo>/people/<person>/health/`
+- `<private-repo>/people/`

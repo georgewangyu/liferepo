@@ -41,7 +41,7 @@ Recommended private layout for new setups:
 ```
 
 `georgeskills` prefers that layout, but still supports older private layouts
-such as `personal-health/records/` and `health-family/.../records/`.
+such as `people/george/health/records/` and `people/[person]/health/records/`.
 
 ## Step 1: Bootstrap the Private Repo
 
