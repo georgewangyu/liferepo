@@ -23,7 +23,8 @@ Define reusable workflows for capturing, refining, and organizing knowledge.
 1. Capture research questions and hypotheses.
 2. Collect sources and synthesize findings.
 3. Distill into reusable models, patterns, and decision support.
-4. Route actionable outputs to principles, projects, or daily planning.
+4. Promote recurring topics into a compiled knowledge layer when they need a maintained current-best page.
+5. Route actionable outputs to principles, projects, or daily planning.
 
 ## Research Lifecycle
 
@@ -42,5 +43,6 @@ Define reusable workflows for capturing, refining, and organizing knowledge.
 ## Companion Spec
 
 - `RESEARCH_WORKFLOW.md`
+- `COMPILED_KNOWLEDGE_WORKFLOW.md`
 - `LEARNING_TRACK_WORKFLOW.md`
 - `PERSONAL_PROFILE_CAPTURE_WORKFLOW.md`

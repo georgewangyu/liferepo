@@ -18,4 +18,5 @@ Reusable guidance for research and knowledge-management workflows.
 
 - Canonical agent rules: `AGENT-knowledge.md`
 - Research lifecycle details: `RESEARCH_WORKFLOW.md`
+- Canonical middle-layer synthesis: `COMPILED_KNOWLEDGE_WORKFLOW.md`
 - Curated-study runbook: `LEARNING_TRACK_WORKFLOW.md`
