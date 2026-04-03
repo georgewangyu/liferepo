@@ -69,6 +69,17 @@ This repository is the public, reusable agent framework layer.
 - Treat commit-format and hook rules in `docs/ASSISTANT_OPERATING_MANUAL.md` as
   mandatory.
 
+## Public Publication Guard
+
+- Treat `liferepo` as eventually public.
+- Before commit or push, staged changes must pass the repo's public-safety
+  validation in `.githooks/public-safety-check.py`.
+- That validation is meant to catch obvious publication mistakes in staged
+  additions: local identity strings derived from git/home config, non-placeholder
+  email addresses, absolute local filesystem paths, and common secret material.
+- If a change intentionally needs a real identifier, stop and get explicit human
+  confirmation before committing.
+
 ## Document Header Contract
 
 - Every markdown document must start with YAML frontmatter.
