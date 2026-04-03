@@ -92,7 +92,8 @@ Prefer a staged approach:
 1. Auto-capture milestones into chronological logs.
 2. Auto-refresh candidate memory records into a reviewable overlay.
 3. Auto-suggest compiled-page updates only when a topic has enough new signal.
-4. Prefer targeted page updates over broad whole-repo recompilation.
+4. Regenerate the canonical page's synthesis from grounded evidence so the page itself becomes the maintained artifact of understanding.
+5. Run health checks to find stale, thin, or weakly synthesized pages.
 
 This keeps the middle layer selective instead of turning into another noisy
 archive.
