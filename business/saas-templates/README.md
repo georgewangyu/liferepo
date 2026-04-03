@@ -38,6 +38,29 @@ templates and explain to me what next steps are."
    skeleton (2-4 hours).
 6. Run 1-week private usage trial and collect friction log (5-7 days).
 
+## Default Build Pattern
+
+For most SaaS projects, the safest default sequence is:
+
+1. Lock the product spine: user, problem, primary action, and non-goals.
+2. Build the frontend shell: marketing page, app frame, and key route skeletons.
+3. Build one real vertical slice that proves user value.
+4. Add auth, persistence, and backend only as needed to support that slice.
+5. Repeat outward from the core workflow instead of widening the app randomly.
+
+The practical shorthand is:
+
+- frontend shell
+- first vertical slice
+- persistence/backend around that slice
+- repeat
+
+What to avoid:
+
+- building every page before any workflow works
+- overbuilding backend before one user action is proven
+- mistaking the starter template for the product itself
+
 ## Immediate Next Actions (Today)
 
 - Write a one-page v1 scope: user, problem, non-goals, success metric (30 min).
