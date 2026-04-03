@@ -228,6 +228,11 @@ Preferred normalization rules:
 
 Use each section for a distinct kind of memory signal:
 
+- `Sprints Today`: what actually happened. Use this for the real executed deep
+  sprints, partial conversions, misses, and how the day actually unfolded.
+- `Deep Sprint Plan`: the opening plan or intended sprint structure for that
+  date. This can differ from reality; do not rewrite it to pretend the plan is
+  what actually happened once the day is done.
 - `Highlights`: concrete wins, shipped outputs, or objectively good outcomes.
 - `Challenges`: obstacles, repeated failure modes, or constraints that mattered
   to the day.

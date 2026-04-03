@@ -172,6 +172,24 @@ Before calling a section or page "done," capture:
 If any of those fail, the section is still in draft, even if the code looks
 clean in the editor.
 
+### Turn The Loop Into A Gate
+
+If the project is large enough to have repeated frontend work, the loop should
+become executable:
+
+1. pick 3-5 canonical specimen routes
+2. add a repo command such as `qa:design`
+3. make that command run:
+   - a design audit for inline-style and obvious token-bypass mistakes
+   - desktop + mobile screenshot capture for specimen routes
+   - browser console inspection during the capture run
+4. store the screenshot manifest in a predictable artifact folder
+5. do not mark frontend tasks done until that command passes
+
+This prevents the common failure mode where the model reads the design-language
+docs, produces something "close enough," and then stops before checking the
+actual rendered result carefully.
+
 ### Practical SaaS Default
 
 For SaaS work, the best default is:

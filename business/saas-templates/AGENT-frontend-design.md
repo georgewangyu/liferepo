@@ -125,6 +125,18 @@ Frontend work should use a closed loop:
 
 If the rendered UI is wrong, the work is not done, even if the code is clean.
 
+For any serious frontend repo, add an executable gate instead of relying on
+taste and memory alone:
+
+- choose 3-5 canonical specimen routes
+- block inline styles and other obvious design-language bypasses
+- capture desktop and mobile screenshots for those specimen routes
+- check browser console output during the capture pass
+- define "done" as passing that gate, not just shipping code that seems close
+
+The design-language folder is the policy layer. The audit + screenshot loop is
+the enforcement layer.
+
 ## Editing Boundaries
 
 Keep in frontend-design docs:
