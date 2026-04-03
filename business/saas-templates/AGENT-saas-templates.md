@@ -24,13 +24,16 @@ into a running product baseline quickly.
 1. Clarify v1 scope, non-goals, and one success metric.
 2. Compare 2-3 starter options and pick one with explicit tradeoffs.
 3. Scaffold quickly, then validate local run before adding custom features.
-4. Build one vertical slice that proves user value.
-5. Capture learnings and adjust scope before expanding architecture.
+4. Build the frontend shell before widening feature depth.
+5. Build one vertical slice that proves user value.
+6. Add auth, persistence, and backend only where that slice needs them.
+7. Capture learnings and repeat from the core workflow outward.
 
 ## Guardrails
 
 - Default to monolith-first for day 1 unless a real constraint requires more.
 - Avoid adding infra layers before a measurable need appears.
+- Avoid building broad page surface area before one core workflow is real.
 - Keep each work block small and testable.
 - Record assumptions and upgrade triggers as explicit notes.
 

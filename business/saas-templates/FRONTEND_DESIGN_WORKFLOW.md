@@ -204,6 +204,19 @@ This is a better operating loop than page-by-page building with delayed review,
 because it catches both design drift and state/interaction bugs while the
 context is still fresh.
 
+One common sequencing mistake is to keep adding routes after the shell starts
+looking credible. The better default is:
+
+1. get the frontend shell into a coherent state
+2. stop widening the app surface
+3. choose one core workflow
+4. make that workflow real end-to-end, even with mocked data first
+5. attach persistence and backend to that working slice
+6. only then expand into adjacent routes and features
+
+This prevents the familiar trap where the app looks broad but nothing important
+actually works yet.
+
 ## What You Should Look At in References
 
 When you review and send screenshots, focus on these signals:
