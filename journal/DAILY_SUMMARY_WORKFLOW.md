@@ -62,6 +62,12 @@ Finalize by running:
 3. reflection interview
 4. synthesis and cleanup
 
+When prep data is available and a same-day summary file already exists, carry
+forward the objective context into the summary before the interview instead of
+leaving it only in terminal output. In practice that usually means updating
+`Health Context`, `Location Context`, and other relevant objective sections
+after prep succeeds.
+
 ## Morning Cue Protocol
 
 If user starts with `morning`, `start of day`, or similar:
