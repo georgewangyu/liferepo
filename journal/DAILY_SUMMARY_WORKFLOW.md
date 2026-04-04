@@ -231,8 +231,10 @@ Use each section for a distinct kind of memory signal:
 - `Sprints Today`: what actually happened. Use this for the real executed deep
   sprints, partial conversions, misses, and how the day actually unfolded.
 - `Deep Sprint Plan`: the opening plan or intended sprint structure for that
-  date. This can differ from reality; do not rewrite it to pretend the plan is
-  what actually happened once the day is done.
+  date. This can differ from reality. Use it while the day is still planned or
+  actively unfolding, but once the real executed sprints are captured clearly
+  in `Sprints Today`, remove `Deep Sprint Plan` instead of keeping both
+  sections around forever.
 - `Highlights`: concrete wins, shipped outputs, or objectively good outcomes.
 - `Challenges`: obstacles, repeated failure modes, or constraints that mattered
   to the day.
@@ -309,6 +311,8 @@ For a next-day file in `planned` state:
   has already happened
 - update or replace the plan once the real day starts and incremental capture
   begins
+- once `Sprints Today` has been filled in with the actual day, drop the now-stale
+  `Deep Sprint Plan` section rather than preserving duplicate planned text
 
 ## Quality Rules
 
@@ -337,3 +341,6 @@ At the end of the daily workflow, if tomorrow priorities are clear:
      needs, or energy risks
 3. Never leave the next-day planning file as a blank stub if the retrospective
    already surfaced a concrete plan.
+4. Once tomorrow becomes today and the real sprint record is written into
+   `Sprints Today`, remove the old `Deep Sprint Plan` block unless it still
+   serves a specific comparative purpose.
