@@ -2,3 +2,9 @@
 *.swp
 .liferepo/local/
 build/
+
+# Media and audio files
+*.WAV
+*.wav
+*.mp3
+*.m4a
