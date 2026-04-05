@@ -246,6 +246,19 @@ Use each section for a distinct kind of memory signal:
 - `Conversation Milestones`: meaningful chat-derived progress, tool changes,
   repo changes, workflow upgrades, and other important developments that should
   not live only in chat history.
+  **Categorization**: Each milestone bullet should be prefixed with a domain tag
+  in square brackets to make the section scannable and to aid downstream
+  extraction into `agent-managed/` and `memory/`. Use one of the following
+  canonical tags, or introduce a new one when none fits:
+  - `[infra]` — repo structure, tooling, scripts, automation, CI/CD
+  - `[product]` — shipped features, UI, UX, frontend/backend integration
+  - `[outreach]` — emails sent, proposals, CRM, cold outreach, partnerships
+  - `[knowledge]` — research, wiki updates, knowledge-base changes
+  - `[health]` — health data pipeline, metrics, imports
+  - `[workflow]` — daily workflow, journal, sprint schema, process changes
+  - `[content]` — social media, video editing, posts, distribution
+  - `[conversation]` — distilled conversation note signal
+  Example format: `- [product] Deepened the ADA Engagement Loop: connected /commenting/ to backend...`
 - `Narrator Notes`: compact pattern recognition or causal interpretation that
   helps future retrieval.
 - `Purchases / Spending`: only when transactions materially explain behavior,
@@ -327,6 +340,15 @@ For a next-day file in `planned` state:
 - `Narrator Notes` are optional but recommended when they help distill the
   day's pattern in a sharper, more voiceful way. They should feel like vivid
   pattern-calling, not generic encouragement.
+
+## LLM Synthesis Handoff
+
+Before moving to the final end-of-day planning handoff, check what the automated agents extracted and perform manual synthesis:
+
+1. Review the generated `agent-managed/_candidates/` and `agent-managed/log.md` outputs.
+2. Cross-reference the highlights from `Today at a Glance` and `Conversation Milestones`.
+3. Use your LLM capabilities to identify relevant canonical topics in `agent-managed/topics/` or `memory/*.jsonl` and actively rewrite their `Current Understanding` sections to reflect today's new context.
+4. Do not solely rely on the Python script's naive bullet extraction. Ensure the wiki genuinely compounds and connects insights semantically.
 
 ## End-Of-Day Planning Handoff
 
