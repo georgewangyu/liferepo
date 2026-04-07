@@ -69,6 +69,12 @@ This repository is the public, reusable agent framework layer.
 - Treat commit-format and hook rules in `docs/ASSISTANT_OPERATING_MANUAL.md` as
   mandatory.
 
+## Artifact & Plan Persistence
+
+- The Assistant heavily leverages ephemeral Markdown artifacts (e.g., `implementation_plan.md`, `task.md`, `walkthrough.md`) during planning and execution.
+- Whenever an implementation plan, task list, or walkthrough is generated and finalized in the internal workspace, the Assistant MUST automatically copy these artifacts over to the active project's local repository (e.g., `<project-root>/docs/plans/*`).
+- Do not wait for the user to ask for a save/sync command. This guarantees the local repository continuously tracks the newest execution specs alongside the codebase.
+
 ## Public Publication Guard
 
 - Treat `liferepo` as eventually public.
