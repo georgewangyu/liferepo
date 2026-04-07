@@ -2,6 +2,7 @@
 *.swp
 .liferepo/local/
 build/
+.obsidian/
 
 # Media and audio files
 *.WAV
