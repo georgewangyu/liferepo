@@ -98,11 +98,28 @@ Use these when available:
 - health context
 - optional location context
 - same-day git history context
+- DJI audio transcripts for the date (see below)
 
 When email context includes receipts, orders, or transaction confirmations,
 carry forward the important ones into the summary body when they are relevant
 to behavior, diet, travel, logistics, or money. Do not leave them only in prep
 output if they materially explain what happened that day.
+
+### Audio Transcript Ingestion
+
+Check for DJI transcripts at:
+```text
+dji-audio/transcripts/YYYY/MM/
+```
+
+If transcripts exist for the date:
+1. Read all clips for the date.
+2. Strip obvious MLX hallucination artifacts (repeated identical phrases, zero-duration segments).
+3. Run LLM interpretation: detect likely language errors (e.g. Whisper mislabeling language), infer speakers from context clues, flag low-confidence segments.
+4. Produce a speaker-labeled pass. Use best-guess speaker names from context; George can correct later.
+5. Tag each meaningful segment with one or more domain tags (same tag vocabulary as `Conversation Milestones`): `[workflow]`, `[people]`, `[health]`, `[travel]`, `[work]`, `[personal]`, `[meta]`, etc.
+6. Write the result into `## Audio Log — YYYY-MM-DD` in the day's summary.
+7. Pull high-signal items (decisions, people interactions, travel events) up into `## People / Relationships`, `## Key Decisions`, and `## Conversation Milestones` as appropriate.
 
 Recommended helper commands:
 
