@@ -188,6 +188,8 @@ Minimum sections:
 
 - Today at a Glance
 - Daily Metrics
+- Health Context
+- Location Context
 - Sprints Today
 - Deep Sprint Plan
 - Highlights
