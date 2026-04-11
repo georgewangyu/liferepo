@@ -109,7 +109,7 @@ output if they materially explain what happened that day.
 
 Check for DJI transcripts at:
 ```text
-dji-audio/transcripts/YYYY/MM/
+<private-repo>/journal/audio/transcripts/YYYY/MM/
 ```
 
 If transcripts exist for the date:
@@ -120,6 +120,11 @@ If transcripts exist for the date:
 5. Tag each meaningful segment with one or more domain tags (same tag vocabulary as `Conversation Milestones`): `[workflow]`, `[people]`, `[health]`, `[travel]`, `[work]`, `[personal]`, `[meta]`, etc.
 6. Write the result into `## Audio Log — YYYY-MM-DD` in the day's summary.
 7. Pull high-signal items (decisions, people interactions, travel events) up into `## People / Relationships`, `## Key Decisions`, and `## Conversation Milestones` as appropriate.
+
+Raw audio storage convention:
+
+- Keep the shared workspace `dji-audio/` tree raw-only.
+- Save transcript artifacts under `<private-repo>/journal/audio/transcripts/` instead of next to the raw files.
 
 Recommended helper commands:
 
