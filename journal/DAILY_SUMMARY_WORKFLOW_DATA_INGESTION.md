@@ -68,6 +68,18 @@ python3 <private-repo>/scripts/exports/calendar/export_calendar_google.py
 
 Then extract target-date context for interview prompts.
 
+## Optional Audio Context
+
+When available, gather same-day audio artifacts before the interview:
+
+- DJI transcript files under `<private-repo>/journal/audio/transcripts/YYYY/MM/`
+- SnackVoice ambient-capture daily markdown at
+  `~/Library/Application Support/<snackvoice-bundle-id>/ambient-capture/YYYY-MM-DD.md`
+
+Treat the ambient-capture markdown as already-transcribed source material. It
+should feed the same day-level interpretation pass as DJI transcripts rather
+than a separate ingestion workflow.
+
 ## Optional Location Context
 
 If configured:
