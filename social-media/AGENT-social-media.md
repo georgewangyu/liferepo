@@ -65,17 +65,19 @@ and long-form article distribution.
 - A good X thread should feel complete on-platform even if nobody clicks the
   gist.
 
-## Morning Publishing Loop
+## Morning Publishing Prompt
 
 When the user wants a standing morning publishing routine:
 
 1. Pull one concrete idea from current work, the daily summary, or the morning
    brief signals.
-2. Draft or refine one public-safe markdown note that can stand alone outside
-   the repository.
-3. If the note earns publication, create a gist.
-4. Convert the note into an X-native hook-first thread.
-5. Log the gist URL and tweet IDs in the daily summary.
+2. Present the strongest one to three candidate ideas and ask the user what to
+   post about.
+3. Only after the user chooses a direction, draft or refine one public-safe
+   markdown note that can stand alone outside the repository.
+4. If the note earns publication, create a gist and convert it into an X-native
+   hook-first thread.
+5. Log the gist URL and tweet IDs in the daily summary after publication.
 
 ### Long-Form Distribution
 
