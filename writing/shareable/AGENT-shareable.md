@@ -25,6 +25,9 @@ gists, posts, or reference notes.
 - When a piece references system architecture, use `<private-repo>` placeholders
   instead of naming a real private repository.
 - Draft locally first. Treat publication as a separate step.
+- Keep repository drafts compliant with `liferepo` markdown frontmatter rules.
+- For gists, strip the YAML frontmatter before publishing. Public gist output
+  should start at the title, not at repo metadata.
 
 ## Output Shape
 

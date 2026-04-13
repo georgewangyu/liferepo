@@ -39,3 +39,9 @@ Typical uses:
 - `AGENT-shareable.md` defines writing rules for this area
 - `IMPROVEMENTS.md` tracks backlog ideas for stronger publish workflows
 - individual markdown files hold one shareable piece each
+
+## Publication Rule
+
+- Local drafts in this repo keep required YAML frontmatter.
+- Gist versions should remove that frontmatter before publication so the public
+  post reads like an essay, not a repository document.
