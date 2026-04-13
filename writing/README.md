@@ -25,3 +25,4 @@ Reusable guidance for high-quality writing workflows across formats.
 - Cross-channel writing workflow design
 - Long-form planning, drafting, and review
 - Prompt-framework reuse for consistent AI-assisted writing quality
+- Public-safe drafts intended for later sharing live in `shareable/`
