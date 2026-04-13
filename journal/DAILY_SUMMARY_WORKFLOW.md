@@ -99,6 +99,7 @@ Use these when available:
 - optional location context
 - same-day git history context
 - DJI audio transcripts for the date (see below)
+- SnackVoice ambient-capture daily markdown for the date (see below)
 
 When email context includes receipts, orders, or transaction confirmations,
 carry forward the important ones into the summary body when they are relevant
@@ -112,19 +113,27 @@ Check for DJI transcripts at:
 <private-repo>/journal/audio/transcripts/YYYY/MM/
 ```
 
-If transcripts exist for the date:
-1. Read all clips for the date.
-2. Strip obvious MLX hallucination artifacts (repeated identical phrases, zero-duration segments).
-3. Run LLM interpretation: detect likely language errors (e.g. Whisper mislabeling language), infer speakers from context clues, flag low-confidence segments.
-4. Produce a speaker-labeled pass. Use best-guess speaker names from context; George can correct later.
-5. Tag each meaningful segment with one or more domain tags (same tag vocabulary as `Conversation Milestones`): `[workflow]`, `[people]`, `[health]`, `[travel]`, `[work]`, `[personal]`, `[meta]`, etc.
-6. Write the result into `## Audio Log — YYYY-MM-DD` in the day's summary.
-7. Pull high-signal items (decisions, people interactions, travel events) up into `## People / Relationships`, `## Key Decisions`, and `## Conversation Milestones` as appropriate.
+Check for SnackVoice ambient-capture markdown at:
+```text
+~/Library/Application Support/<snackvoice-bundle-id>/ambient-capture/YYYY-MM-DD.md
+```
+
+If audio artifacts exist for the date:
+1. Read all DJI clips for the date.
+2. Read the SnackVoice ambient-capture markdown file for the date when present.
+3. Treat each ambient-capture `## HH:MM - HH:MM` block as a transcript segment from the same day-level source, not as a separate workflow.
+4. Strip obvious transcription artifacts (repeated identical phrases, zero-content segments, isolated punctuation-only blocks).
+5. Run LLM interpretation across all same-day audio artifacts together: detect likely language errors (e.g. Whisper mislabeling language), infer speakers from context clues, flag low-confidence segments.
+6. Produce a speaker-labeled pass. Use best-guess speaker names from context; George can correct later.
+7. Tag each meaningful segment with one or more domain tags (same tag vocabulary as `Conversation Milestones`): `[workflow]`, `[people]`, `[health]`, `[travel]`, `[work]`, `[personal]`, `[meta]`, etc.
+8. Write the result into `## Audio Log — YYYY-MM-DD` in the day's summary.
+9. Pull high-signal items (decisions, people interactions, travel events) up into `## People / Relationships`, `## Key Decisions`, and `## Conversation Milestones` as appropriate.
 
 Raw audio storage convention:
 
 - Keep the shared workspace `dji-audio/` tree raw-only.
 - Save transcript artifacts under `<private-repo>/journal/audio/transcripts/` instead of next to the raw files.
+- Treat SnackVoice ambient-capture markdown as another transcript-first source artifact; do not copy it into `dji-audio/`.
 
 Recommended helper commands:
 
