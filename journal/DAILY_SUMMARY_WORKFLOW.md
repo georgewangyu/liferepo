@@ -84,11 +84,13 @@ If the user wants a standing public-output habit as part of the morning flow:
 
 1. Choose one idea from current work, the latest daily summary, or the morning
    brief signals.
-2. Draft or refine one public-safe markdown note that can be shared outside the
-   repo.
-3. If the note is worth shipping, publish it as a gist.
-4. Turn it into an X-native hook-first thread, usually with the gist link in
-   the final reply instead of the opener.
+2. Present one to three candidate post directions and ask the user which one to
+   pursue.
+3. Only after the user picks a direction, draft or refine one public-safe
+   markdown note that can be shared outside the repo.
+4. If the note is worth shipping, publish it as a gist and turn it into an
+   X-native hook-first thread, usually with the gist link in the final reply
+   instead of the opener.
 5. Record the publishing action under `Conversation Milestones`, including gist
    URL and tweet IDs when available.
 
