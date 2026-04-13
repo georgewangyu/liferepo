@@ -56,10 +56,13 @@ and long-form article distribution.
 
 - When an idea has real depth, draft the longer argument first as a public-safe
   markdown file, then derive the X version from that source.
+- Default publication sequence: create the gist first, then publish the X
+  thread from that source.
 - Prefer a hook-first thread over a single long post when the goal is reach,
   repostability, or platform-native pacing.
 - Keep the first post link-free whenever possible.
-- Put the gist or deeper reading link in the final reply, not the opener.
+- Put the gist or deeper reading link in the final reply, not the opener. Treat
+  this as the default format, not an optional flourish.
 - Default thread shape: `hook -> system layer -> system layer -> practical
   takeaway -> optional link`.
 - A good X thread should feel complete on-platform even if nobody clicks the
@@ -75,8 +78,9 @@ When the user wants a standing morning publishing routine:
    post about.
 3. Only after the user chooses a direction, draft or refine one public-safe
    markdown note that can stand alone outside the repository.
-4. If the note earns publication, create a gist and convert it into an X-native
-   hook-first thread.
+4. If the note earns publication, create the gist first and then convert it
+   into an X-native hook-first thread, with the gist link reserved for the
+   final reply.
 5. Log the gist URL and tweet IDs in the daily summary after publication.
 
 ### Long-Form Distribution
