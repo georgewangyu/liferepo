@@ -88,9 +88,9 @@ If the user wants a standing public-output habit as part of the morning flow:
    pursue.
 3. Only after the user picks a direction, draft or refine one public-safe
    markdown note that can be shared outside the repo.
-4. If the note is worth shipping, publish it as a gist and turn it into an
-   X-native hook-first thread, usually with the gist link in the final reply
-   instead of the opener.
+4. If the note is worth shipping, create the gist first and then turn it into
+   an X-native hook-first thread, with the gist link in the final reply instead
+   of the opener.
 5. Record the publishing action under `Conversation Milestones`, including gist
    URL and tweet IDs when available.
 
