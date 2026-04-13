@@ -25,6 +25,7 @@ Reusable guidance for cross-platform content workflows.
 - Short-form video story design
 - Short-form text promotion across X/LinkedIn/Threads
 - Long-form article/newsletter planning and launch sequencing
+- Gist-backed X thread workflow for turning local markdown into public posts
 
 ## Boundary
 

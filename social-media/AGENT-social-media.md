@@ -52,6 +52,31 @@ and long-form article distribution.
   - LinkedIn: longer, readable blocks with a clear professional takeaway.
 - Keep external-link placement and CTA strategy platform-aware.
 
+### X Gist-Backed Threads
+
+- When an idea has real depth, draft the longer argument first as a public-safe
+  markdown file, then derive the X version from that source.
+- Prefer a hook-first thread over a single long post when the goal is reach,
+  repostability, or platform-native pacing.
+- Keep the first post link-free whenever possible.
+- Put the gist or deeper reading link in the final reply, not the opener.
+- Default thread shape: `hook -> system layer -> system layer -> practical
+  takeaway -> optional link`.
+- A good X thread should feel complete on-platform even if nobody clicks the
+  gist.
+
+## Morning Publishing Loop
+
+When the user wants a standing morning publishing routine:
+
+1. Pull one concrete idea from current work, the daily summary, or the morning
+   brief signals.
+2. Draft or refine one public-safe markdown note that can stand alone outside
+   the repository.
+3. If the note earns publication, create a gist.
+4. Convert the note into an X-native hook-first thread.
+5. Log the gist URL and tweet IDs in the daily summary.
+
 ### Long-Form Distribution
 
 - Bias to quality over frequency; every article should deliver substantive value.
