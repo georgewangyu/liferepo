@@ -50,8 +50,14 @@ During normal chat/work, append relevant facts as rough bullets:
 - health/energy context
 - notable purchases, receipts, or spending events when they help explain the day
 - priorities and unfinished work
+- raw thoughts, odd observations, or small behavior changes that may later be
+  worth turning into public writing
 
 Do not block on polish during this phase.
+Do not create a dedicated newsletter-ideas section unless the user explicitly
+asks for one. Keep those notes inline in the section where they naturally fit,
+or drop them into `Conversation Milestones` when they are still too rough to
+place cleanly elsewhere.
 
 ## Phase 2: End-of-Day Finalization
 
@@ -67,6 +73,18 @@ forward the objective context into the summary before the interview instead of
 leaving it only in terminal output. In practice that usually means updating
 `Health Context`, `Location Context`, and other relevant objective sections
 after prep succeeds.
+
+### End-of-Day Writing Add-On
+
+If the user is building a standing public-writing habit:
+
+1. Scan the day's summary for one to three candidate angles worth sharing.
+2. Prefer material already captured inline during the day over reconstructing
+   the idea from memory at night.
+3. Draft the strongest angle into a public-safe note or newsletter piece only
+   after confirming the direction with the user when choice is still ambiguous.
+4. Record the writing action or chosen angle back into `Conversation
+   Milestones`.
 
 ## Morning Cue Protocol
 
