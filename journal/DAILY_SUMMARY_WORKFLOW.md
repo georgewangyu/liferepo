@@ -158,10 +158,11 @@ If audio artifacts exist for the date:
 3. Treat each ambient-capture `## HH:MM - HH:MM` block as a transcript segment from the same day-level source, not as a separate workflow.
 4. Strip obvious transcription artifacts (repeated identical phrases, zero-content segments, isolated punctuation-only blocks).
 5. Run LLM interpretation across all same-day audio artifacts together: detect likely language errors (e.g. Whisper mislabeling language), infer speakers from context clues, flag low-confidence segments.
-6. Produce a speaker-labeled pass. Use best-guess speaker names from context; George can correct later.
-7. Tag each meaningful segment with one or more domain tags (same tag vocabulary as `Conversation Milestones`): `[workflow]`, `[people]`, `[health]`, `[travel]`, `[work]`, `[personal]`, `[meta]`, etc.
-8. Write the result into `## Audio Log — YYYY-MM-DD` in the day's summary.
-9. Pull high-signal items (decisions, people interactions, travel events) up into `## People / Relationships`, `## Key Decisions`, and `## Conversation Milestones` as appropriate.
+6. Prefer detail-rich synthesis over transcript snippets: write meaningful multi-sentence thematic summaries that preserve context, decisions, and rationale.
+7. Produce a speaker-labeled pass. Use best-guess speaker names from context; George can correct later.
+8. Tag each meaningful segment with one or more domain tags (same tag vocabulary as `Conversation Milestones`): `[workflow]`, `[people]`, `[health]`, `[travel]`, `[work]`, `[personal]`, `[meta]`, etc.
+9. Write the result into `## Audio Log — YYYY-MM-DD` in the day's summary.
+10. Pull high-signal items (decisions, people interactions, travel events) up into `## People / Relationships`, `## Key Decisions`, and `## Conversation Milestones` as appropriate.
 
 Raw audio storage convention:
 
