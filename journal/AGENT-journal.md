@@ -33,6 +33,9 @@ Treat these as journal workflow cues:
 2. Run data/context prep before interview prompts.
 3. Separate objective context from subjective reflection.
 4. Generate artifacts into `<private-repo>/journal/`, not `liferepo`.
+5. When same-day audio artifacts exist, require a real thematic audio synthesis;
+   do not treat deterministic transcript passthrough or raw snippet dumps as an
+   acceptable completed state.
 
 ## Daily Summary Contract
 
@@ -64,6 +67,9 @@ Daily summary markdown must include standard doc frontmatter plus
 - Keep summaries factual, specific, and retrieval-friendly.
 - Use concrete references over abstract phrasing.
 - Preserve human voice while avoiding private details in public specs.
+- For audio-derived sections, prefer interpreted meaning over noisy transcript
+  fragments. If proper interpretation cannot be produced, leave an explicit
+  blocker instead of silently degrading the quality bar.
 
 ## Repository Boundary
 
