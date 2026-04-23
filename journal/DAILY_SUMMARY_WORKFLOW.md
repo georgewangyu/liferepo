@@ -164,6 +164,15 @@ If audio artifacts exist for the date:
 9. Write the result into `## Audio Log — YYYY-MM-DD` in the day's summary.
 10. Pull high-signal items (decisions, people interactions, travel events) up into `## People / Relationships`, `## Key Decisions`, and `## Conversation Milestones` as appropriate.
 
+Audio quality bar:
+
+- Proper audio interpretation is required when same-day audio artifacts exist.
+- Do not silently fall back to deterministic transcript passthrough as the
+  normal completed path.
+- If model-based audio interpretation is unavailable or fails, surface that as
+  an explicit workflow blocker (or a clearly marked manual-review exception),
+  rather than writing gibberish or raw transcript shards into the summary.
+
 Raw audio storage convention:
 
 - Keep the shared workspace `dji-audio/` tree raw-only.
