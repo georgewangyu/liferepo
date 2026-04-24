@@ -31,6 +31,15 @@ Reusable default stance for early SaaS product architecture.
 - one billing/activation path
 - one feedback loop from real users
 
+## Billing Default
+
+If the product charges subscriptions:
+
+- keep hosted checkout and billing management on the web
+- use the backend as the subscription and entitlement source of truth
+- make clients consume entitlement state instead of implementing billing logic
+- write policy for cancellation, `past_due`, grace, and quota before coding
+
 ## Upgrade Triggers
 
 Only add architecture layers when concrete triggers appear, such as:

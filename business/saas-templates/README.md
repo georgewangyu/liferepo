@@ -46,19 +46,26 @@ For most SaaS projects, the safest default sequence is:
 2. Build the frontend shell: marketing page, app frame, and key route skeletons.
 3. Build one real vertical slice that proves user value.
 4. Add auth, persistence, and backend only as needed to support that slice.
-5. Repeat outward from the core workflow instead of widening the app randomly.
+5. If the product is subscription-backed, add the billing spine next:
+   - pricing + entitlement policy
+   - hosted checkout + billing portal
+   - webhook-backed subscription state
+   - single entitlement API for every client
+6. Repeat outward from the core workflow instead of widening the app randomly.
 
 The practical shorthand is:
 
 - frontend shell
 - first vertical slice
 - persistence/backend around that slice
+- subscription workflow if recurring revenue is core
 - repeat
 
 What to avoid:
 
 - building every page before any workflow works
 - overbuilding backend before one user action is proven
+- bolting subscriptions on after auth and client UX have already drifted apart
 - mistaking the starter template for the product itself
 
 ## Immediate Next Actions (Today)
@@ -83,5 +90,6 @@ Use this folder to capture each key decision in this compact format:
 - `../SAAS_PRODUCT_DEFAULTS.md`
 - `../AGENT-business.md`
 - `AGENT-frontend-design.md`
+- `SUBSCRIPTION_SETUP_WORKFLOW.md`
 - `FRONTEND_DESIGN_WORKFLOW.md`
 - `MARKET_OPPORTUNITY_SHORTLIST.md`
