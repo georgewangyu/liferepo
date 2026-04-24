@@ -27,7 +27,13 @@ into a running product baseline quickly.
 4. Build the frontend shell before widening feature depth.
 5. Build one vertical slice that proves user value.
 6. Add auth, persistence, and backend only where that slice needs them.
-7. Capture learnings and repeat from the core workflow outward.
+7. If the product charges recurring revenue, lock the subscription workflow
+   before broadening the app:
+   - write pricing + entitlement policy first
+   - keep hosted checkout and billing-management on the web
+   - treat other clients as entitlement consumers, not billing systems
+   - add webhook idempotency and lifecycle QA early
+8. Capture learnings and repeat from the core workflow outward.
 
 ## Guardrails
 
@@ -48,3 +54,4 @@ into a running product baseline quickly.
 - `README.md`
 - `../SAAS_PRODUCT_DEFAULTS.md`
 - `AGENT-frontend-design.md`
+- `SUBSCRIPTION_SETUP_WORKFLOW.md`
