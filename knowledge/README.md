@@ -20,4 +20,3 @@ Reusable guidance for research and knowledge-management workflows.
 - Research lifecycle details: `RESEARCH_WORKFLOW.md`
 - Canonical middle-layer synthesis: `COMPILED_KNOWLEDGE_WORKFLOW.md`
 - Curated-study runbook: `LEARNING_TRACK_WORKFLOW.md`
-- Finance learning notes (public-safe): `finance/README.md`
