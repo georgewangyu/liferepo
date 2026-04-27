@@ -19,3 +19,4 @@ interview preparation.
 
 - Canonical agent rules: `AGENT-career.md`
 - Related: `../resume/AGENT-resume.md`
+- US visa prep workflow pointer: `us-visa/README.md`
