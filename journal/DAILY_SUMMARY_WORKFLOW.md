@@ -96,6 +96,26 @@ python3 <private-repo>/scripts/journal/morning_brief.py --date YYYY-MM-DD
 
 If brief reports `watch`/`alert`, surface that before sprint planning.
 
+### Morning Market Radar Add-On
+
+If the morning routine includes external market signal, keep it compact but
+link-rich:
+
+1. X / Twitter: scan both For You and Following. Include handles, links,
+   engagement/context, and a short reason each item is worth noticing.
+2. GitHub: scan daily and weekly trending repositories. Include repository
+   links, one-line summaries, and why each repo matters for the current
+   build/research lanes.
+3. YC / Launch HN: scan recent launches and batch themes. Include Launch HN
+   links and concise summaries rather than only company names.
+4. Product Hunt: use web/browser lookup by default, not terminal fetches, when
+   the public web surface is challenge-prone. Summarize useful product,
+   positioning, and wedge signals from today's launches and recent winners.
+
+Do not add a generic reading/essay radar by default. The market radar should
+produce a handful of high-signal links, repeated themes, and one practical
+planning implication for the day's build or content work.
+
 ### Morning Publishing Add-On
 
 If the user wants a standing public-output habit as part of the morning flow:
