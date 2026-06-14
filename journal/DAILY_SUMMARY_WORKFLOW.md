@@ -98,23 +98,32 @@ If brief reports `watch`/`alert`, surface that before sprint planning.
 
 ### Morning Market Radar Add-On
 
-If the morning routine includes external market signal, keep it compact but
-link-rich:
+If the morning routine includes external market signal, make it substantive but
+bounded: more useful than a tiny digest and less sprawling than a full research
+report.
 
 1. X / Twitter: scan both For You and Following. Include handles, links,
-   engagement/context, and a short reason each item is worth noticing.
+   engagement/context, and a short reason each item is worth noticing. Include
+   `4-8` high-signal items across the two feeds and group related posts into
+   themes when the feed is repeating itself.
 2. GitHub: scan daily and weekly trending repositories. Include repository
    links, one-line summaries, and why each repo matters for the current
-   build/research lanes.
+   build/research lanes. Include `5-8` repositories across daily and weekly
+   trends with star/velocity context when available, and call out likely misses
+   or blindspots when a repo looks important but context is weak.
 3. YC / Launch HN: scan recent launches and batch themes. Include Launch HN
-   links and concise summaries rather than only company names.
+   links and concise summaries rather than only company names. Include `3-6`
+   launches with wedge/positioning notes and the pattern worth noticing.
 4. Product Hunt: use web/browser lookup by default, not terminal fetches, when
    the public web surface is challenge-prone. Summarize useful product,
    positioning, and wedge signals from today's launches and recent winners.
+   Include `5-8` products with links, taglines or category summaries,
+   ranking/upvote context when visible, and the product/positioning lesson.
 
 Do not add a generic reading/essay radar by default. The market radar should
-produce a handful of high-signal links, repeated themes, and one practical
-planning implication for the day's build or content work.
+preserve enough detail in both the chat response and summary artifact to be
+useful later: links, engagement/rank context, repeated themes, and practical
+planning implications for the day's build or content work.
 
 ### Morning Publishing Add-On
 
