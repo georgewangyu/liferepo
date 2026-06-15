@@ -125,6 +125,31 @@ preserve enough detail in both the chat response and summary artifact to be
 useful later: links, engagement/rank context, repeated themes, and practical
 planning implications for the day's build or content work.
 
+#### Detailed Market Read Output Shape
+
+When the morning routine returns market signal, use a durable "detailed read"
+format in both the chat response and the summary artifact:
+
+1. `X`: summarize the strongest clusters first, then list the individual posts
+   that matter. Each bullet should include handle/link, engagement or reach
+   context when available, what the post is really saying, and why it matters
+   for the current work.
+2. `GitHub`: prioritize weekly trends and repo clusters over raw ranking. Each
+   bullet should include repo link, star/velocity context when available, what
+   the project does, and the direct relevance to agents, workflow systems,
+   content tooling, or current builds.
+3. `Product Hunt`: treat launches as product-positioning evidence. Each bullet
+   should include product link, rank/upvote/comment context when visible,
+   tagline/category, the wedge, and whether to try, track, ignore, or borrow
+   the positioning pattern.
+4. `YC / Launch HN`: include only the launches that add a distinct company,
+   devtools, agent, infra, or distribution pattern.
+5. `What This Means`: end with the repeated pattern, the strongest planning
+   implication, and one concrete proof object or action for the day.
+
+Avoid output that is only a link dump. The useful shape is: source signal,
+pattern, implication, action.
+
 ### Morning Publishing Add-On
 
 If the user wants a standing public-output habit as part of the morning flow:
