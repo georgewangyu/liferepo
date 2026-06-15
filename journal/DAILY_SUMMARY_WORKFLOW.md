@@ -102,28 +102,44 @@ If the morning routine includes external market signal, make it substantive but
 bounded: more useful than a tiny digest and less sprawling than a full research
 report.
 
-1. X / Twitter: scan both For You and Following. Include handles, links,
-   engagement/context, and a short reason each item is worth noticing. Include
-   `4-8` high-signal items across the two feeds and group related posts into
-   themes when the feed is repeating itself.
+1. X / Twitter: scan both For You and Following. Include a full detailed read
+   of the feed, normally `8-12` high-signal items across the two feeds unless
+   the source is stale or blocked. For each item, include handles, links,
+   engagement/context, what the post is really saying, and why it is worth
+   noticing. Group related posts into themes when the feed is repeating itself,
+   but do not compress the X read down to only a cluster summary.
 2. GitHub: scan daily and weekly trending repositories. Include repository
    links, one-line summaries, and why each repo matters for the current
-   build/research lanes. Include `5-8` repositories across daily and weekly
-   trends with star/velocity context when available, and call out likely misses
-   or blindspots when a repo looks important but context is weak.
+   build/research lanes. Include a full detailed read, normally `8-12`
+   repositories across daily and weekly trends unless the source is stale or
+   blocked, with star/velocity context when available, what each repo actually
+   does, and call out likely misses or blindspots when a repo looks important
+   but context is weak.
 3. YC / Launch HN: scan recent launches and batch themes. Include Launch HN
    links and concise summaries rather than only company names. Include `3-6`
    launches with wedge/positioning notes and the pattern worth noticing.
 4. Product Hunt: use web/browser lookup by default, not terminal fetches, when
    the public web surface is challenge-prone. Summarize useful product,
    positioning, and wedge signals from today's launches and recent winners.
-   Include `5-8` products with links, taglines or category summaries,
-   ranking/upvote context when visible, and the product/positioning lesson.
+   Include a full detailed read, normally `8-12` products unless the source is
+   stale or blocked. For each product, include links, taglines or category
+   summaries, rank/upvote/comment context when visible, the wedge, whether to
+   try/track/ignore/borrow the positioning pattern, and the product/positioning
+   lesson.
 
 Do not add a generic reading/essay radar by default. The market radar should
 preserve enough detail in both the chat response and summary artifact to be
 useful later: links, engagement/rank context, repeated themes, and practical
 planning implications for the day's build or content work.
+
+#### No-Compression Rule for Morning Signal
+
+The morning routine must not compress X, GitHub, or Product Hunt into only a
+short final digest. For those three sources, the final chat response and the
+summary artifact should both include the full detailed read unless the source
+is blocked, stale, or explicitly skipped. `What This Means` is an additional
+synthesis section, not a replacement for the detailed X/GitHub/Product Hunt
+sections. YC / Launch HN can stay more selective.
 
 #### Detailed Market Read Output Shape
 
