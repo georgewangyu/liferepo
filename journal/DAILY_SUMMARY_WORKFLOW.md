@@ -162,9 +162,45 @@ format in both the chat response and the summary artifact:
    devtools, agent, infra, or distribution pattern.
 5. `What This Means`: end with the repeated pattern, the strongest planning
    implication, and one concrete proof object or action for the day.
+6. `Signal Routing / Recommendations`: turn the source signal into concrete
+   recommendations. This section is required when X, GitHub, or Product Hunt
+   contains multiple interesting items; do not leave the morning read at
+   "interesting links."
 
 Avoid output that is only a link dump. The useful shape is: source signal,
 pattern, implication, action.
+
+#### Signal Routing / Recommendations Output Shape
+
+After the detailed source sections, include a strategic section named
+`Signal Routing / Recommendations`. It should translate the market read into
+clear buckets:
+
+1. `Ignition Event Candidates`: posts, launches, repos, controversies, demos,
+   or transcripts that reveal a trending pain, norm violation, proof moment, or
+   public argument the user could ride. Prefer items with high views, unusually
+   high engagement, low-follower/high-reach asymmetry, or a sharp cultural
+   fault line. Explain the ignition angle and the proof artifact needed.
+2. `Skill / Automation Candidates`: repeatable workflows that could become a
+   skill, bot command, prompt layer, MCP adapter, or repo-native automation.
+   Include the first scriptable step and the likely owner area.
+3. `Repos / Tweets To Study`: the specific GitHub repos, tweets, transcripts,
+   or Product Hunt launches worth opening, cloning, transcribing, or adapting
+   thinking around. Explain why direct inspection is worth it.
+4. `Content Ideas`: maintain a rolling weekly bank of `5-10` concrete ideas
+   for blogs, social posts, or under-three-minute short-form videos. Each idea
+   should include the hook, source signal, suggested format, and why the idea
+   is timely. Blog ideas should be framed so they can later become short video
+   scripts.
+5. `Personal Project Candidates`: recommend weekly project ideas the user
+   could clone, rebuild, remix, or ship as proof objects. Include the source
+   inspiration, smallest useful version, estimated effort, and connection to
+   current work or content lanes.
+
+This section should be opinionated. If everything is interesting, rank the
+items. Prefer concrete recommendations over a giant possibility cloud. Carry
+the best recommendations into the summary artifact so they can be recovered
+during weekly planning and content selection.
 
 ### Morning Publishing Add-On
 
