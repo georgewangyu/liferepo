@@ -105,9 +105,11 @@ report.
 1. X / Twitter: scan both For You and Following. Include a full detailed read
    of the feed, normally `8-12` high-signal items across the two feeds unless
    the source is stale or blocked. For each item, include handles, links,
-   engagement/context, what the post is really saying, and why it is worth
-   noticing. Group related posts into themes when the feed is repeating itself,
-   but do not compress the X read down to only a cluster summary.
+   author follower count when available, views, likes, replies/reposts when
+   useful, low-follower/high-reach ratio or outlier read, what the post is
+   really saying, and why it is worth noticing. Group related posts into themes
+   when the feed is repeating itself, but do not compress the X read down to
+   only a cluster summary.
 2. GitHub: scan daily and weekly trending repositories. Include repository
    links, one-line summaries, and why each repo matters for the current
    build/research lanes. Include a full detailed read, normally `8-12`
@@ -147,9 +149,11 @@ When the morning routine returns market signal, use a durable "detailed read"
 format in both the chat response and the summary artifact:
 
 1. `X`: summarize the strongest clusters first, then list the individual posts
-   that matter. Each bullet should include handle/link, engagement or reach
-   context when available, what the post is really saying, and why it matters
-   for the current work.
+   that matter. Each bullet should include handle/link, author follower count
+   when available, views, likes, other engagement or reach context when useful,
+   and a quick low-follower/high-reach read when the ratio is notable. Then
+   explain what the post is really saying and why it matters for the current
+   work.
 2. `GitHub`: prioritize weekly trends and repo clusters over raw ranking. Each
    bullet should include repo link, star/velocity context when available, what
    the project does, and the direct relevance to agents, workflow systems,
