@@ -102,7 +102,15 @@ If the morning routine includes external market signal, make it substantive but
 bounded: more useful than a tiny digest and less sprawling than a full research
 report.
 
-1. X / Twitter: scan both For You and Following. Include a full detailed read
+1. AI news heat: for open-ended news sweeps, build the candidate universe from
+   primary announcement surfaces and independent discovery sources before
+   ranking. Resolve secondary reactions back to the canonical announcement.
+   Keep event-level heat separate from personalized-feed or
+   low-follower/high-reach outlier detection; feed outliers are supporting
+   evidence, not the full market. When timing matters, optionally run a later
+   delta refresh for new launches, material acceleration, or action-threshold
+   changes instead of rerunning the entire morning scan.
+2. X / Twitter: scan both For You and Following. Include a full detailed read
    of the feed, normally `8-12` high-signal items across the two feeds unless
    the source is stale or blocked. For each item, include handles, links,
    author follower count when available, views, likes, replies/reposts when
@@ -110,17 +118,17 @@ report.
    really saying, and why it is worth noticing. Group related posts into themes
    when the feed is repeating itself, but do not compress the X read down to
    only a cluster summary.
-2. GitHub: scan daily and weekly trending repositories. Include repository
+3. GitHub: scan daily and weekly trending repositories. Include repository
    links, one-line summaries, and why each repo matters for the current
    build/research lanes. Include a full detailed read, normally `8-12`
    repositories across daily and weekly trends unless the source is stale or
    blocked, with star/velocity context when available, what each repo actually
    does, and call out likely misses or blindspots when a repo looks important
    but context is weak.
-3. YC / Launch HN: scan recent launches and batch themes. Include Launch HN
+4. YC / Launch HN: scan recent launches and batch themes. Include Launch HN
    links and concise summaries rather than only company names. Include `3-6`
    launches with wedge/positioning notes and the pattern worth noticing.
-4. Product Hunt: use web/browser lookup by default, not terminal fetches, when
+5. Product Hunt: use web/browser lookup by default, not terminal fetches, when
    the public web surface is challenge-prone. Summarize useful product,
    positioning, and wedge signals from today's launches and recent winners.
    Include a full detailed read, normally `8-12` products unless the source is
