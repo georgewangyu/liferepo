@@ -275,7 +275,7 @@ If audio artifacts exist for the date:
 2. Read the SnackVoice ambient-capture markdown file for the date when present.
 3. Treat each ambient-capture `## HH:MM - HH:MM` block as a transcript segment from the same day-level source, not as a separate workflow.
 4. Strip obvious transcription artifacts (repeated identical phrases, zero-content segments, isolated punctuation-only blocks).
-5. Run LLM interpretation across all same-day audio artifacts together: detect likely language errors (e.g. Whisper mislabeling language), infer speakers from context clues, flag low-confidence segments.
+5. Have the active assistant interpret all same-day transcript text together: detect likely language errors (e.g. Whisper mislabeling language), infer speakers from context clues, and flag low-confidence segments. Prep scripts should only discover sources and must not embed calls to an external model provider.
 6. Prefer detail-rich synthesis over transcript snippets: write meaningful multi-sentence thematic summaries that preserve context, decisions, and rationale.
 7. Produce a speaker-labeled pass. Use best-guess speaker names from context; George can correct later.
 8. Tag each meaningful segment with one or more domain tags (same tag vocabulary as `Conversation Milestones`): `[workflow]`, `[people]`, `[health]`, `[travel]`, `[work]`, `[personal]`, `[meta]`, etc.
@@ -285,11 +285,13 @@ If audio artifacts exist for the date:
 Audio quality bar:
 
 - Proper audio interpretation is required when same-day audio artifacts exist.
-- Do not silently fall back to deterministic transcript passthrough as the
-  normal completed path.
-- If model-based audio interpretation is unavailable or fails, surface that as
-  an explicit workflow blocker (or a clearly marked manual-review exception),
-  rather than writing gibberish or raw transcript shards into the summary.
+- The active assistant owns interpretation directly and should summarize as
+  much supported meaning as possible inside the journal log.
+- Prep scripts must not hydrate transcripts through an embedded external-model
+  call. Missing provider credentials are not a workflow blocker.
+- Do not silently fall back to deterministic transcript passthrough. Surface a
+  gap only when transcript text is missing or unreadable, or when a raw
+  recording has no transcript to interpret.
 
 Raw audio storage convention:
 
