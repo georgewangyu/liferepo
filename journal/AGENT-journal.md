@@ -36,6 +36,11 @@ Treat these as journal workflow cues:
 5. When same-day audio artifacts exist, require a real thematic audio synthesis;
    do not treat deterministic transcript passthrough or raw snippet dumps as an
    acceptable completed state.
+6. For an elapsed day, default the end-of-day closeout and any historical
+   backfill to `summary_status: completed`. Preserve missing sources,
+   uncertainty, corrections, and open work inside the completed summary. Use
+   `partial` only when George explicitly asks to keep that day incomplete;
+   future seeded summaries remain `planned` until their date occurs.
 
 ## Daily Summary Contract
 
@@ -55,6 +60,11 @@ Daily flow should produce:
 
 Daily summary markdown must include standard doc frontmatter plus
 `summary_status`.
+
+Completion is the default outcome for an elapsed-day run. Missing subjective
+ratings, telemetry, exports, or a later correction request should be labeled
+but should not keep the whole summary partial unless George says it is
+incomplete.
 
 ## Monthly and Retro Contracts
 

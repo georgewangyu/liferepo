@@ -512,8 +512,15 @@ summary_status: planned | partial | completed
 Definitions:
 
 - `planned`: summary file initialized, interview/finalization not yet run
-- `partial`: meaningful content captured, still materially incomplete
-- `completed`: workflow completed with best available data
+- `partial`: George explicitly asked to keep the elapsed day incomplete; record
+  the exact missing decision or follow-up that preserves this state
+- `completed`: the default for every elapsed-day closeout and historical
+  backfill, using the best available data
+
+Missing subjective ratings, telemetry, exports, unresolved work, or later
+corrections should remain visible inside a completed summary rather than
+blocking completion. Use `partial` only when George explicitly says the day is
+incomplete.
 
 For a next-day file in `planned` state:
 - prefer concrete proposed sprints over generic placeholders
@@ -523,6 +530,8 @@ For a next-day file in `planned` state:
   begins
 - once `Sprints Today` has been filled in with the actual day, drop the now-stale
   `Deep Sprint Plan` section rather than preserving duplicate planned text
+- at end-of-day, promote the elapsed date to `completed` by default unless
+  George explicitly asks to keep it incomplete
 
 ## Quality Rules
 
