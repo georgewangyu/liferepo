@@ -20,8 +20,8 @@ Created after the need for a clean place to draft markdown pieces about the
 `liferepo` / agent-system philosophy before publishing them as gists or other
 shareable posts.
 
-Inspiration: "can we write that into a gist somewhere ... maybe we start a
-folder for markdown files that we can share"
+The workflow keeps reusable writing separate from private source notes and
+requires a publication check before sharing.
 
 ## Purpose
 

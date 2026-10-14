@@ -19,8 +19,8 @@ execution gates.
 
 ## Genesis
 
-Created from user request: "Let's start a folder in liferepo regarding saas
-templates and explain to me what next steps are."
+Created to provide a reusable process for choosing a starter template and
+validating a first product workflow.
 
 ## Scope
 
@@ -68,7 +68,7 @@ What to avoid:
 - bolting subscriptions on after auth and client UX have already drifted apart
 - mistaking the starter template for the product itself
 
-## Immediate Next Actions (Today)
+## First Planning Steps
 
 - Write a one-page v1 scope: user, problem, non-goals, success metric (30 min).
 - Choose template now (recommended default: `nextjs/saas-starter`) and record
